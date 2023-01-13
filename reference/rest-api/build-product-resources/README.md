@@ -1,0 +1,1 @@
+# OPENAPI- Build product resources

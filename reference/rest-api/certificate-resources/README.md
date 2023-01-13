@@ -1,0 +1,2 @@
+# OPENAPI- Certificate resources
+

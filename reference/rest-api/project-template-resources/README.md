@@ -1,0 +1,2 @@
+# OPENAPI- Project template resource
+
