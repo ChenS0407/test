@@ -1,0 +1,1 @@
+# BKCI code structure
