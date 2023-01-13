@@ -1,21 +1,21 @@
 # Must read before use
 
-## **return code**
+## **Return code**
 
-| 返回值 | 涵义 |
+| Return code | Description |
 | :--- | :--- |
 | `200 OK` | Operation successful |
-| `201 Created` | Created successfully
+| `201 Created` | Created successfully|
 | `400 Bad Request` | Parameter error, or parameter format error |
-| `401 Unauthorized` | Authentication failed
+| `401 Unauthorized` | Authentication failed|
 | `403 Forbidden` | The account does not have permission for this action or the project is set to not allow this action |
 | `404 Not Found` | The resource does not exist, or the account may not have permission to the project (to prevent hackers from crashing the library to get the library list) |
 | `405 Method Not Allowed` | There is no such interface |
-| `409 Conflict` | Conflict with an existing object/content or an action that conflicts with a rule
+| `409 Conflict` | Conflict with an existing object/content or an action that conflicts with a rule|
 | `422 Unprocessable` | operation cannot be performed |
 | `423 Locked` | Account is locked, or api request frequency exceeds limit |
 | `429 Too Many Requests` | Requests are restricted |
-| `500 Server Error` | Server error
+| `500 Server Error` | Server error|
 
 ## **Authentication method**
 
