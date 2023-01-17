@@ -1,22 +1,22 @@
 ---
-description: 制品库提供了强大的元数据过滤功能，通过合理的元数据规范，你可以轻松的获取合规的制品。
+description: The product library provides powerful metadata filtering capabilities, and with reasonable metadata specification, you can easily obtain compliant products.
 ---
 
-# 元数据规范
+# Metadata specification
 
-## 什么是元数据
+## What is metadata
 
-就像照片拥有分辨率、拍摄位置、文件大小一样，制品也有着属于自己的标签，我们将这类标签称之为“元数据”
+Just like a photo has a resolution, a location, and a file size, an artifact also has its own tags, which we call "metadata"
 
-## 一个制品需要有哪些元数据
+## What metadata does a product need to have
 
-元数据KEY | 元数据Value | 备注
--- | -- | --
-pipeline_id | p-xxxxxx | 产生本构件对应的流水线ID
+Metadata KEY | Metadata Value | Remarks
+-- | --- | ---
+pipeline_id | p-xxxxxx | Generate the pipeline ID for this component
 build_id | b-xxxxxx | 
 
-## 如何编写元数据过滤器
+## How to write metadata filters
 
-目前支持一组Key/Value写法：
+A set of Key/Value writes are currently supported.
 
 `key:value`

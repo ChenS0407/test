@@ -1,51 +1,53 @@
-# **蓝鲸使用学习材料**
+# **Blue Whale usage learning materials**
+Tencent Blue Whale, or Blue Whale for short, is a PaaS development framework developed and used by IEG to build an integrated system for enterprise R&D and operations, providing modules such as aPaaS (DevOps streamline, runtime environment hosting, front and backend framework) and iPaaS (continuous integration, CMDB, job platform, container management, computing platform, AI and other atomic platforms) to help enterprise technicians quickly build a basic operations PaaS. This article provides a selection of existing documentation and videos to help you understand the capabilities of Blue Whale and how to use it more efficiently.
 
-腾讯蓝鲸智云，简称蓝鲸，是IEG自研自用的一套用于构建企业研发运营一体化体系的 PaaS 开发框架，提供了 aPaaS（DevOps 流水线、运行环境托管、前后台框架）和 iPaaS（持续集成、CMDB、作业平台、容器管理、计算平台、AI 等原子平台）等模块，帮助企业技术人员快速构建基础运营 PaaS。本文通过精选一系列现有的文档与视频，帮助您更高效的了解蓝鲸的能力以及使用方法。
+## **Introduction to Blue Whale features and usage**
 
-## **蓝鲸功能介绍与使用**
-
-|服务名称|简介|功能介绍|操作入门|最佳实践|
+|service name|Introduction|Function Introduction|Introduction to Operation|Best Practices|
 |:-|:-|:-|:-|:-|
-|PaaS平台|开放的平台，又称蓝鲸 PaaS。|[文档](https://bk.tencent.com/docs/document/6.0/148/6675?r=1)|[蓝鲸基础](https://bk.tencent.com/docs/document/6.0/142/8600)|[十分钟掌握PaaS平台使用](https://bk.tencent.com/s-mart/video?id=3-4-6)|
-|权限中心|集中权限管理服务，支持基于蓝鲸开发框架的SaaS和企业第三方系统的权限控制接入，以及支持细粒度的权限管理。|[文档](https://bk.tencent.com/docs/document/6.0/131/7337)|同上|[权限中心入门](https://bk.tencent.com/s-mart/video?id=3-4-11)|
-|用户管理|企业组织架构、多用户目录等集中的用户管理解决方案，为企业统一登录提供认证源服务|[文档](https://bk.tencent.com/docs/document/6.0/146/7330)|同上|[用户管理入门](https://bk.tencent.com/s-mart/video?id=3-4-10)<br/><br>[企业用户的权限管理实践](https://ke.qq.com/webcourse/index.html#cid=3101748&term_id=103224098&taid=10600778153546804&type=1024&vid=5285890812656571159)|
-|标准运维|通过可视化的图形界面进行任务流程编排和执行的系统，是腾讯蓝鲸产品体系中一款轻量级的调度编排类 SaaS 产品。|[文档](https://bk.tencent.com/docs/document/6.0/140/6256)|同上|[标准运维入门](https://bk.tencent.com/s-mart/video?id=3-4-12)<br/><br>[助力企业快速实现跨系统调度](https://ke.qq.com/webcourse/index.html#cid=3101748&term_id=103224098&taid=10600778153546804&type=1024&vid=5285890812656571159)|
-|配置平台CMDB|面向应用的 CMDB，为应用提供了各种运维场景的配置数据服务。通过提供配置管理服务，以数据和模型相结合映射应用间的关系，保证数据的准确和一致性；并以整合的思路推进，最终面向应用消费，发挥配置服务的价值。|[文档](https://bk.tencent.com/docs/document/6.0/152/6962)|同上|[配置平台（CMDB）入门](https://bk.tencent.com/s-mart/video?id=3-4-7)<br/><br>[快速上手配置平台业务管理实践](https://ke.qq.com/webcourse/index.html#cid=3101748&term_id=103224098&taid=10476971426272308&type=1024&vid=5285890811384581657)|
-|作业平台JOB|基于蓝鲸智云管控平台 Agent 管道之上，提供基础操作的原子平台；具备上万台并发处理能力，除了支持脚本执行、文件拉取 / 分发、定时任务等一系列基础运维场景以外，还支持通过流程调度能力将零碎的单个任务组装成一个自动化作业流程；而每个任务都可做为一个原子节点，提供给上层或周边系统/平台使用，实现跨系统调度自动化。|[文档](https://bk.tencent.com/docs/document/6.0/125/5748)|同上|[作业平台（JOB）入门](https://bk.tencent.com/s-mart/video?id=3-4-9)<br/><br>[JOB作业形态的设计思路与实践](https://ke.qq.com/webcourse/index.html#cid=3101748&term_id=103224098&taid=10503149251941428&type=1024&vid=5285890811648452257)|
-|节点管理|帮助企业批量快速安装蓝鲸 Agent 的 SaaS 应用，支持对常见的 Linux、Windows、AIX （仅限企业版）操作系统进行自动化部署，提供了跨云管理的安装部署方案，帮助企业轻松应对多云区域的 IaaS 设备管控。|[文档](https://bk.tencent.com/docs/document/6.0/157/7017)|同上|[节点管理入门](https://bk.tencent.com/s-mart/video?id=3-4-8)<br><br>[跨云主机管理实践](https://ke.qq.com/webcourse/index.html#cid=3101748&term_id=103224098&taid=10488408924181556&type=1024&vid=5285890811485540879)|
-|流程服务ITSM|基于蓝鲸智云体系的上层 SaaS 应用。通过可自定义设计的流程模块，覆盖 IT 服务中的不同管理活动或应用场景。|[文档](https://bk.tencent.com/docs/document/6.0/145/6623)|同上|[企业服务的流程化解决方案](https://ke.qq.com/webcourse/index.html#cid=3101748&term_id=103224098&taid=10611073190155316&type=1024&vid=5285890812747520862)|
-|监控平台|监控平台产品，除了具有丰富的数据采集能力，大规模的数据处理能力，简单易用，还提供更多的平台扩展能力。依托于蓝鲸 PaaS，有别于传统的 CS 结构，在整个蓝鲸生态中可以形成监控的闭环能力。|[文档](https://bk.tencent.com/docs/document/6.0/134/6143)|[监控、日志&故障自愈](https://bk.tencent.com/docs/document/6.0/142/8599)|[监控平台入门](https://bk.tencent.com/s-mart/video?id=3-4-13)<br/><br>[监控的四步核心玩法](https://ke.qq.com/webcourse/index.html#cid=3101748&term_id=103224098&taid=10532075856679988&type=1024&vid=5285890812038449507)|
-|日志平台|解决分布式架构下日志收集、查询困难的一款日志产品，基于业界主流的全文检索引擎，通过蓝鲸智云的专属 Agent 进行日志采集，提供多种场景化的采集、查询功能。|[文档](https://bk.tencent.com/docs/document/6.0/126/7310)|同上|[企业的日志解决方案](https://ke.qq.com/webcourse/index.html#cid=3101748&term_id=103224098&taid=10573689794810932&type=1024&vid=5285890812342691699)|
-|故障自愈|“故障自动化处理”解决方案，提升企业的服务可用性和降低故障处理的人力投入，实现故障自愈从“人工处理”到“无人值守”的变革!|[文档](https://bk.tencent.com/docs/document/6.0/133/7369)|同上||
-|容器管理平台BCS|高度可扩展、灵活易用的容器管理服务平台，支持社区原生 Kubernetes 编排引擎。|[文档](https://bk.tencent.com/docs/document/6.0/144/6523?r=1)|[容器管理平台](https://bk.tencent.com/docs/document/6.0/142/6568)|[助力企业实现容器化的实践](https://ke.qq.com/webcourse/index.html#cid=3101748&term_id=103224098&taid=10650552529540148&type=1024&vid=5285890812975359660)|
+|PaaS|Open platform, also known as Blue Whale PaaS.|[document](https://bk.tencent.com/docs/document/6.0/148/6675?r=1)|[bk basic](https://bk.tencent.com/docs/document/6.0/142/8600)|[Ten minutes to master the use of PaaS platform](https://bk.tencent.com/s-mart/video?id=3-4-6)|
+|bkiam|Centralized permission management service, supporting access to permission control of SaaS and enterprise third-party systems based on Blue Whale development framework, as well as supporting fine-grained permission management.|[document](https://bk.tencent.com/docs/document/6.0/131/7337)|as above|[Getting Started with bkiam](https://bk.tencent.com/s-mart/video?id=3-4-11)|
+|usermgr|Centralized user management solution for enterprise organizational structure, multi-user directory, etc., providing authentication source services for enterprise unified login|[document](https://bk.tencent.com/docs/document/6.0/146/7330)|as above|[Getting Started with usermgr](https://bk.tencent.com/s-mart/video?id=3-4-10)<br/><br>[Rights management practices for enterprise users](https://ke.qq.com/webcourse/index.html#cid=3101748&term_id=103224098&taid=10600778153546804&type=1024&vid=5285890812656571159)|
+|sops|It is a lightweight scheduling and orchestration SaaS product in Tencent Blue Whale's product system, which carries out task process scheduling and execution through a visual graphical interface.|[document](https://bk.tencent.com/docs/document/6.0/140/6256)|as above|[Getting Started with sops](https://bk.tencent.com/s-mart/video?id=3-4-12)<br/><br>[Helping enterprises quickly achieve cross-system scheduling](https://ke.qq.com/webcourse/index.html#cid=3101748&term_id=103224098&taid=10600778153546804&type=1024&vid=5285890812656571159)|
+|CMDB|Application-oriented CMDB provides configuration data services for applications in various operation and maintenance scenarios. By providing configuration management services, the relationship between applications is mapped with a combination of data and models to ensure the accuracy and consistency of data; and it is advanced with the idea of integration, and finally oriented to application consumption to bring into play the value of configuration services.|[document](https://bk.tencent.com/docs/document/6.0/152/6962)|as above|[Getting Started with CMDB](https://bk.tencent.com/s-mart/video?id=3-4-7)<br/><br>[Get started quickly with CMDB business management practices](https://ke.qq.com/webcourse/index.html#cid=3101748&term_id=103224098&taid=10476971426272308&type=1024&vid=5285890811384581657)|
+|JOB|Based on the Blue Whale Smart Cloud Control Platform Agent pipeline, it provides an atomic platform for basic operations; with a concurrent processing capability of tens of thousands of units, it supports a series of basic operation and maintenance scenarios such as script execution, file pulling/distribution, timing tasks, etc., and also supports the ability to assemble fragmented individual tasks into an automated operation process through process scheduling; and each task can be used as an atomic node and provided to the upper layer or peripheral systems/platforms to realize cross-system scheduling automation.|[document](https://bk.tencent.com/docs/document/6.0/125/5748)|as above|[Getting Started with JOB](https://bk.tencent.com/s-mart/video?id=3-4-9)<br/><br>[JOB form design thinking and practice](https://ke.qq.com/webcourse/index.html#cid=3101748&term_id=103224098&taid=10503149251941428&type=1024&vid=5285890811648452257)|
+|nodeman|It supports automated deployment of common Linux, Windows, and AIX (Enterprise Edition only) operating systems, and provides a cross-cloud management installation and deployment solution to help enterprises easily cope with IaaS device control in multi-cloud regions.|[document](https://bk.tencent.com/docs/document/6.0/157/7017)|as above|[Getting Started with nodeman](https://bk.tencent.com/s-mart/video?id=3-4-8)<br><br>[Cross-Cloud Hosting Management Practices](https://ke.qq.com/webcourse/index.html#cid=3101748&term_id=103224098&taid=10488408924181556&type=1024&vid=5285890811485540879)|
+|ITSM|An upper layer SaaS application based on Blue Whale Smart Cloud system. It covers different management activities or application scenarios in IT services through customizable design process modules.|[document](https://bk.tencent.com/docs/document/6.0/145/6623)|as above|[Process-oriented solutions for enterprise services](https://ke.qq.com/webcourse/index.html#cid=3101748&term_id=103224098&taid=10611073190155316&type=1024&vid=5285890812747520862)|
+|bkmonitor|The monitoring platform product, in addition to rich data collection capability, large-scale data processing capability and easy to use, also provides more platform expansion capability. Relying on Blue Whale PaaS, it is different from the traditional CS structure and can form the closed-loop capability of monitoring in the whole Blue Whale ecology.|[document](https://bk.tencent.com/docs/document/6.0/134/6143)|[monitor、log&Fault self-healing](https://bk.tencent.com/docs/document/6.0/142/8599)|[Getting Started with bkmonitor](https://bk.tencent.com/s-mart/video?id=3-4-13)<br/><br>[The four steps of the core play of monitoring](https://ke.qq.com/webcourse/index.html#cid=3101748&term_id=103224098&taid=10532075856679988&type=1024&vid=5285890812038449507)|
+|bklog|It is a log product that solves the difficulties of log collection and query under the distributed architecture, based on the industry's mainstream full-text search engine, and provides a variety of scenario-based collection and query functions through the exclusive agent of Blue Whale Smart Cloud for log collection.|[document](https://bk.tencent.com/docs/document/6.0/126/7310)|as above|[Logging Solutions for the Enterprise](https://ke.qq.com/webcourse/index.html#cid=3101748&term_id=103224098&taid=10573689794810932&type=1024&vid=5285890812342691699)|
+|Fault self-healing|The "automated fault handling" solution can improve the service availability and reduce the human investment in fault handling, and realize the change from "manual handling" to "unattended" fault self-healing!|[document](https://bk.tencent.com/docs/document/6.0/133/7369)|as above||
+|BCS|A highly scalable, flexible and easy-to-use container management service platform that supports the community-native Kubernetes orchestration engine.|[document](https://bk.tencent.com/docs/document/6.0/144/6523?r=1)|[BCS](https://bk.tencent.com/docs/document/6.0/142/6568)|[Helping enterprises achieve containerization in practice](https://ke.qq.com/webcourse/index.html#cid=3101748&term_id=103224098&taid=10650552529540148&type=1024&vid=5285890812975359660)|
 
-**其他材料：**
-官网文档：https://bk.tencent.com/docs/   <br>
-[深度进阶使用（视频）](https://bk.tencent.com/s-mart/video?id=3-15)
+**Other Materials：**
+document：https://bk.tencent.com/docs/   <br>
+[In-depth advanced use (video)](https://bk.tencent.com/s-mart/video?id=3-15)
 
-## **蓝鲸平台的部署与维护**
-蓝鲸社区版基础包安装介质分为[软件包](https://bk.tencent.com/docs/document/6.0/127/7552) (src)和[部署脚本](https://bk.tencent.com/docs/document/6.0/127/7555)包 (install)。通过 rsync + ssh ，将软件包里的各模块按需分发到指定机器，通过部署脚本安装软件依赖、自动生成配置文件、初始化数据库、配置账户和权限等，最后启动进程。
+## **Deployment and Maintenance of Blue Whale Platform**
 
-社区版目前支持以下两种安装方式选择（在开始安装前，请参照[环境准备](https://bk.tencent.com/docs/document/6.0/127/7543)文档，准备[安装介质](https://bk.tencent.com/docs/document/6.0/127/7550)，配置系统环境。）
+The Blue Whale Community Edition base package installation media is divided into [package](https://bk.tencent.com/docs/document/6.0/127/7552) (src) and [deployment script](https://bk.tencent.com/docs/document/6.0/127/ 7555) package (install). Through rsync + ssh, each module in the package is distributed to the specified machine on demand, and the deployment script installs software dependencies, automatically generates configuration files, initializes the database, configures accounts and permissions, etc., and finally starts the process.
 
-单机部署：对于首次接触蓝鲸的用户，寻找一个最快体验和评估蓝鲸的核心功能的方式，请参照[单机部署文档](https://bk.tencent.com/docs/document/6.0/127/7551?r=1)，可以快速体验到蓝鲸基础平台的功能。
+The Community Edition currently supports the following two installation options (before starting the installation, please refer to the [Environment Preparation](https://bk.tencent.com/docs/document/6.0/127/7543) document and prepare the [Installation Media](https://bk.tencent.com/docs/)) document/6.0/127/7550) to configure the system environment.)
 
-标准部署：若需完整的社区版基础包功能，请参照[标准部署文档](https://bk.tencent.com/docs/document/6.0/127/7549?r=1)进行安装。
+Stand-alone deployment: For first-time users looking for a fastest way to experience and evaluate the core features of Blue Whale, please refer to the [Stand-alone Deployment Document](https://bk.tencent.com/docs/document/6.0/127/7551?r=1) for a quick way to experience the features of the Blue Whale base platform.
 
-[部署与维护教学视频](https://ke.qq.com/webcourse/index.html#cid=3101748&term_id=103224098&taid=10658953485571124&type=1024&vid=5285890813070525717)
+Standard Deployment: If you need the complete community edition base package features, please refer to [Standard Deployment Documentation](https://bk.tencent.com/docs/document/6.0/127/7549?r=1) for installation.
 
-## **蓝鲸SaaS开发**
-SaaS 开发是“运维开发”的基础技能。基于 PaaS 平台“开发者中心”的服务，帮助运维同学低成本构建运营系统/工具。一个 SaaS 的研发由两部分组成，一部分是前端，蓝鲸提供了可拖拽的[前端魔盒MagicBox](https://magicbox.bk.tencent.com/)，可以生成前端的 UI 组件和代码；另一部分是后台，蓝鲸提供了[“开发框架”](https://bk.tencent.com/docs/document/6.0/130/5949?r=1)，集成了公共的后台模块，如登录、API 调用等。
+[Deployment and maintenance instructional video](https://ke.qq.com/webcourse/index.html#cid=3101748&term_id=103224098&taid=10658953485571124&type=1024&vid= 5285890813070525717)
 
-文档：https://bk.tencent.com/docs/document/6.0/130/5871
+## **Blue Whale SaaS Development**
 
-### **视频学习：**
-- [蓝鲸企业级PaaS解决方案](https://ke.qq.com/course/3030664?taid=10315536490446472)
-- [Python基础、进阶](https://ke.qq.com/course/3030664?taid=10365405355720328)
-- [前端开发（上）](https://ke.qq.com/course/3030664?taid=10406753005878920)、[（下）](https://ke.qq.com/course/3030664?taid=10406757300846216)
-- [Django基础（一）](https://ke.qq.com/course/3030664?taid=10441460636597896)、[（二）](https://ke.qq.com/course/3030664?taid=10471383673749128)
-- [SaaS开发进阶](https://ke.qq.com/course/3030664?taid=10497338161118856)
-- [SaaS移动端开发](https://ke.qq.com/course/3030664?taid=10538294969253512)
+SaaS development is the basic skill of "O&M development". Based on the services of PaaS platform "Developer Center", it helps O&M students to build operational systems/tools at low cost. A SaaS development consists of two parts, one is the front-end, Blue Whale provides the draggable [Front-end MagicBox](https://magicbox.bk.tencent.com/), which can generate UI components and code for the front-end; the other part is the back-end, Blue Whale provides the ["Development Framework "](https://bk.tencent.com/docs/document/6.0/130/5949?r=1), which integrates public backend modules, such as login, API calls, etc.
 
-## **其他资源**
-[社区用户的经验分享](https://bk.tencent.com/s-mart/community/question/5067?type=article)
+document: https://bk.tencent.com/docs/document/6.0/130/5871
+
+- **Video Learning:**
+- [Blue Whale Enterprise PaaS Solution](https://ke.qq.com/course/3030664?taid=10315536490446472)
+- [Python Basics, Advanced](https://ke.qq.com/course/3030664?taid=10365405355720328)
+- [Front-end development (above)](https://ke.qq.com/course/3030664?taid=10406753005878920), [(below)](https://ke.qq.com/course/3030664?taid=10406757300846216)
+- [Django Fundamentals (I)](https://ke.qq.com/course/3030664?taid=10441460636597896), [(II)](https://ke.qq.com/course/3030664?taid=) 10471383673749128)
+- [SaaS Development Advanced](https://ke.qq.com/course/3030664?taid=10497338161118856)
+- [SaaS Mobile Development](https://ke.qq.com/course/3030664?taid=10538294969253512)
+
+## **Other Resources**
+
+[Experience sharing by community users](https://bk.tencent.com/s-mart/community/question/5067?type=article)

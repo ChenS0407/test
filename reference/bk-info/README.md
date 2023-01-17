@@ -1,4 +1,4 @@
-# **蓝鲸相关材料**
+# **Blue Whale related materials**
 
 {% page-ref page="bk-tutorial.md" %}
 
