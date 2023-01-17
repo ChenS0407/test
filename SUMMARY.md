@@ -50,10 +50,10 @@
   * [组建私有构建集群](tutorials/scene/Build-private-clusters.md)
   * [不同流水线间调用](tutorials/scene/call-pipeline-diff.md)
   * [通知发送到钉钉](tutorials/scene/notification-sent-nail.md)
-* [客户案例](tutorials/case-study/README.md)
-  * [呦尔哈--通过蓝盾提升CI/CD效率](tutorials/case-study/yorha.md)
-  * [永航--通过蓝鲸蓝盾实现跨环境CICD互通](tutorials/case-study/yonghang.md)
-  * [宝可拉--通过按量计费的编译加速方案提升服务器端75%编译速度](tutorials/case-study/bokura.md)
+* [Customer Cases](tutorials/case-study/README.md)
+  * [yorha-Improve CI/CD efficiency with BKCI](tutorials/case-study/yorha.md)
+  * [yonghang--Cross-Environment CICD Interoperability via Blue Whale BKCI](tutorials/case-study/yonghang.md)
+  * [bokura - boosts server-side compilation speed by 75% with volume-based compilation acceleration solution](tutorials/case-study/bokura.md)
 
 
 ## 🚀 Deploy BKCI <a href="#setup" id="setup"></a>
@@ -316,7 +316,6 @@
   * [制品库](reference/faqs/repo-faqs.md)
   * [编译加速](reference/faqs/turbo-faqs.md)
   * [已知问题](reference/faqs/known-issues.md)
-  * [现有问题汇总](reference/pipeline-faqs-all.md)
 * [Limit](reference/limit/README.md)
   * [pipelines](reference/limit/pipeline-limit.md)
 * [蓝鲸相关材料](reference/bk-info/README.md)  
