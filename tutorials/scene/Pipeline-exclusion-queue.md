@@ -6,9 +6,9 @@
 
 When a business performs a build, it often encounters situations where different pipelines need to execute mutually exclusive. For example, a business has two pipelines-one for client packaging and one for server packaging. The two pipelines-must be mutually exclusive, otherwise an error will occur.
 
-## Blue Shield advantage
+## BKCI advantage
 
-The Blue Shield mutex function enables the queue to be started after the same mutex group is configured on the same construction machine.
+The BKCI mutex function enables the queue to be started after the same mutex group is configured on the same construction machine.
 
 ## solution
 

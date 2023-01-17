@@ -28,16 +28,16 @@ This can be done by restarting the project service.
 
 systemctl restart bk-ci-project.service
 
-## Q4: Blue Shield CI machine, space occupation is too high
+## Q4: BKCI CI machine, space occupation is too high
 
 You can check specifically what files are taking up space.
 
-Usually the build takes up a lot of space, so you can use the blue Whale work platform to clean the build regularly.
+Usually the build takes up a lot of space, so you can use the BK work platform to clean the build regularly.
 
-## Q5: The bandwidth usage between Blue Shield machines and Blue Whale MySQL is very high
+## Q5: The bandwidth usage between BKCI machines and BK MySQL is very high
 
 The bk-ci-misc.service process is sending and receiving traffic.
 
-This is a regular Blue Shield task, and every 12 seconds it will do a scan cleanup. The reason for the high traffic is mainly to run the logic of data cleaning.
+This is a regular BKCI task, and every 12 seconds it will do a scan cleanup. The reason for the high traffic is mainly to run the logic of data cleaning.
 
 If too much bandwidth effect use, can build. Data. Clear. MaxThreadHandleProjectNum this configuration to clean up the number of threads to reduce a little mysql operation.

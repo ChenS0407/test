@@ -26,7 +26,7 @@ The build log is stored in the builder. The path for storing the build log is:
 
 The **installation directory of the agent on a private builder**
 
-Blue Shield - Environmental Management - Node - {corresponding to the builder used} - Installation path
+BKCI - Environmental Management - Node - {corresponding to the builder used} - Installation path
 
 ![agent](../../.gitbook/assets/build_log_url.png)
 

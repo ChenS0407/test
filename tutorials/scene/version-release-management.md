@@ -6,7 +6,7 @@
 
 When the business enters the test stage, there will be a large number of new versions output from different branches, which requires students with different functions such as development, planning and art to conduct version tests. However, not only do various versions for internal testing rely on engineers to manually build and download and distribute, which is labor-intensive, but also client packages of different branches and versions are spread through large groups within the company, increasing information security and version management risks.
 
-## Blue Shield advantage
+## BKCI advantage
 
 With a "mobile Version experience" feature that can be embedded in all major IM tools, manual uploading and publishing operations are replaced by automated plug-ins and integrated into the pipeline. The new version package will be automatically updated to the enterprise wechat application after completion of construction, and the enterprise wechat notification will be sent to all the personnel who have the permission to test. In addition to saving manpower input, the unified version management approach also reduces the risk of version leakage and management cost during the test period. Its characteristics are:
 
@@ -32,7 +32,7 @@ Deployment prerequisite
 
 ● * Currently only support enterprise wechat
 
-1. Configure Blue shield pipeline
+1. Configure BKCI pipeline
 
 ![img](../../.gitbook/assets/scene-version-release-management-a.png)
 

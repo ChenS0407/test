@@ -6,9 +6,9 @@
 
 When the Pipeline fails and an error is reported, the development team needs to sort out the whole pipeline and locate the problem, which consumes development manpower.
 
-## Blue Shield advantage
+## BKCI advantage
 
-With Blue Shield's "TJS" (Task, Job, Stage) structure, complex pipelinescan be built by dragging, clicking, and other visual operations. With the red identifier of Task execution status, the team can quickly and intuitively locate pipeline failures and obtain execution logs, reducing the human investment in fault location and troubleshooting.
+With BKCI's "TJS" (Task, Job, Stage) structure, complex pipelinescan be built by dragging, clicking, and other visual operations. With the red identifier of Task execution status, the team can quickly and intuitively locate pipeline failures and obtain execution logs, reducing the human investment in fault location and troubleshooting.
 
 ## solution
 

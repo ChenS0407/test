@@ -6,9 +6,9 @@
 
 In the middle and later stages of game operation, a large project may have dozens or even hundreds of pipelines, which is a great burden for development, operation and maintenance search and maintenance.
 
-## Blue Shield advantage
+## BKCI advantage
 
-Developers can use the Blue Shield tagging function to label by environment, product category, etc., so that the number of individual categories is much smaller. At the same time, the filter function of Blue Shield can be used to achieve accurate positioning.
+Developers can use the BKCI tagging function to label by environment, product category, etc., so that the number of individual categories is much smaller. At the same time, the filter function of BKCI can be used to achieve accurate positioning.
 
 ## solution
 

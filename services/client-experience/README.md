@@ -1,46 +1,45 @@
-# **移动端版本体验简介**
-版本体验服务可以将流水线构建出来的ipa/apk包发布到企业微信上的版本体验应用上，便于产品、测试团队、公司内其他成员协助你的业务验证产品新特性，发现产品潜在缺陷，让你的产品在内部验证流程上得到闭环。
+# **Introduction to Version Experience on Mobile**
 
-## **移动端版本体验的特色功能**
-- 与企业微信的应用整合，同时继承企业微信鉴权，使用更方便、更安全
-- 提供蓝盾插件，与编译构建流水线整合
-- 支持ipa和apk的下载和安装
-- 支持历史版本下载
-- 下载链接动态生成，可根据链接有效时间进行访问管理
-- 文件储存支持腾讯云COS
-- 支持版本体验的人员和时间管理，体验人员从企业微信通讯录同步
-- 支持新版本的消息通知
-- 后台服务支持横向扩展
+Version experience service can publish the ipa/apk packages built out of the pipeline to the version experience application on enterprise WeChat, which facilitates the product, testing team, and other members in the company to assist your business in verifying new product features and discovering potential product defects, allowing your product to close the loop on the internal verification process.
+
+## **Features of the mobile version experience**
+- Application integration with enterprise WeChat, while inheriting enterprise WeChat authentication, more convenient and secure to use
+- Provide BKCI plug-in, integrated with the compilation and construction pipeline
+- Support download and installation of ipa and apk
+- Support historical version download
+- Download links are dynamically generated, and access management can be performed according to the effective time of links
+- File storage support for Tencent Cloud COS
+- Support version experience personnel and time management, experience personnel from enterprise WeChat address book synchronization
+- Support message notification of new versions
+- Backend service supports horizontal expansion
 
 
-## **技术架构**
+## **Technical Architecture**
 ![](../../.gitbook/assets/image-client-experince-instructure.png)
 
+## **Application Management**
 
-## **应用管理**
-- 通过企业微信「工作台」（版本体验），你可以快速进行应用的体验和管理
-
-![](../../.gitbook/assets/image-client-experience-application-1.png)
+- Through Enterprise WeChat "Workbench" (version experience), you can quickly experience and manage applications![](../../.gitbook/assets/image-client-experience-application-1.png)
 
 ![](../../.gitbook/assets/image-client-experience-application-2.png)
 
+## **Application Download**
 
-## **应用下载**
-- 点击「下载」，你可以快速下载应用，ipa会提示跳转safari进行下载，该下载链接为动态生成，可配置按下载次数或有效时间进行访问限制管理
+- Click "Download", you can quickly download the application, ipa will prompt to jump safari for download, the download link is dynamically generated, can be configured by the number of downloads or valid time for access restrictions management
 
 ![](../../.gitbook/assets/image-client-experince-download.png)
 
+## **Pipeline Plugin**
 
-## **流水线插件**
-- 「版本体验插件」与编译构建流水线整合，并提供体验权限的管理，新版本通知等功能
+- The "Version Experience Plugin" integrates with the build pipeline and provides management of experience permissions, new version notifications, and other features
 
 ![](../../.gitbook/assets/image-client-experince-plugin.png)
 
+## **Version Notification**
 
-## **版本通知**
-- 版本体验插件在勾选「通知」后，在应用上传成功后给有权限的人员发送企业微信通知消息
+- The Version Experience plugin sends enterprise WeChat notification messages to people with permission after successful app uploads when "Notify" is checked
 
 ![](../../.gitbook/assets/image-client-experince-notification.png)
 
-## **部署成本**
-- [部署移动端版本体验需要的硬件资源](client-experience-cost.md)
+## **Deployment Costs**
+- [Hardware resources needed to deploy the mobile version of the experience](client-experience-cost.md)

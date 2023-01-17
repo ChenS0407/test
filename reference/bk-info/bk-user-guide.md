@@ -1,8 +1,8 @@
-## **Blue Whale Getting Started Using Documentation**
+## **BK Getting Started Using Documentation**
 
 ## **1. Create a user**
 
-The user information in Blue Whale environment can be added, deleted, and checked in "User Management". The following figure shows.
+The user information in BK environment can be added, deleted, and checked in "User Management". The following figure shows.
 
 ![](../../.gitbook/assets/image-reference-bkuserguide-1.png)
 

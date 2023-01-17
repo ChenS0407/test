@@ -1,15 +1,17 @@
-# **简介**
-bk-chatbot是一款可通过可视化的界面进行任务配置，通过聊天终端软件如企业微信应用机器人进行会话交互实现任务执行和智能问答的蓝鲸 SaaS 产品。
+# **Introduction**
 
-bk-chatbot 有两项核心服务，一为插件集成服务：目前默认集成了作业平台、标准运维和蓝盾平台，后续我们会陆续开放用户自定义插件服务；二为意图识别服务：用户任务配置中收集语料，通过 NLP 、相似度算法等技术训练成识别模型，用户通过与机器人聊天交互，精准匹配到您需要执行的任务。
+bk-chatbot is a blue whale SaaS product that can be configured for tasks through a visual interface and achieve task execution and intelligent Q&A through chat terminal software such as enterprise WeChat application bots for session interaction.
 
-使用bk-chatbot，可以更为方便快捷的执行运维作业，当你不在电脑旁，也可以通过手机端企业微信的交互实现运维作业的执行。
+bk-chatbot has two core services, one is the plug-in integration service: currently the default integration of the job platform, standard operation and BKCI platform, we will gradually open user-defined plug-in services; the second is the intention recognition service: the user task configuration to collect the corpus, through NLP, similarity algorithms and other technologies trained into recognition models, the user through the chat interaction with the robot, accurate matching to your The user interacts with the bot to precisely match the task you need to perform.
 
-# **产品功能**
-插件化接入支持：默认支持作业平台、标准运维平台等插件服务 ，作为官方标准插件提供服务，还支持用户自定义插件开发，定制开发标准插件。
+Using bk-chatbot, you can perform O&M operations more conveniently and quickly. When you are not at the computer, you can also realize the execution of O&M operations through the interaction of enterprise WeChat on the cell phone.
 
-聊天终端接入：默认支持企业微信应用机器人服务，还支持用户自定义加入其它终端软件如QQ、slack等机器人服务。
+# **Product Features**
 
-可交互的任务执行：与机器人发起会话时，可通过交互的方式获取到任务的参数。
+Plug-in access support: default support for operations platform, standard operation and maintenance platform and other plug-in services, as the official standard plug-in services, but also supports user-defined plug-in development, custom development of standard plug-ins.
 
-通用权限管理：通过配置发起人角色，实现机器人技能的权限控制。
+Chat terminal access: default support for enterprise WeChat application robot services, but also supports user-defined to join other terminal software such as QQ, slack and other robot services.
+
+Interactable task execution: When initiating a session with a bot, the parameters of the task can be obtained interactively.
+
+Generic permission management: The permission control of robot skills is achieved by configuring the initiator role.

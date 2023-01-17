@@ -1,6 +1,6 @@
 # Central control machine
 
-Central control machine equivalent to Blue whale, Blue Shield console. The bkcli command can be executed only on the central controller. Execute on any Blue Whale/Blue Shield machine `cat /data/install/.controller_ip` You can obtain the IP address of the central controller
+Central control machine equivalent to BK, BKCI console. The bkcli command can be executed only on the central controller. Execute on any BK/BKCI machine `cat /data/install/.controller_ip` You can obtain the IP address of the central controller
 
 ------
 
@@ -18,7 +18,7 @@ The build log is stored in the builder. The path for storing the build log is:
 
 The **installation directory of the agent on a private builder**
 
-Blue Shield - Environmental Management - Node - {corresponding to the builder used} - Installation path
+BKCI - Environmental Management - Node - {corresponding to the builder used} - Installation path
 
 ![agent安装目录](../../.gitbook/assets/build_log_url.png)agent installation directory
 
@@ -30,7 +30,7 @@ In the pipeline URL, the last string starting with b- is the build number
 
 # Service log
 
-Blue Shield logs are stored by service.
+BKCI logs are stored by service.
 
 The log directory is /data/bkce/logs/ci/
 
@@ -38,7 +38,7 @@ The log directory is /data/bkce/logs/ci/
 
 ### Obtain all service logs:
 
-Access the Blue Shield background service machine
+Access the BKCI background service machine
 
 ```
 find /data/bkce/logs/ci/ -name \*-devops.log -o -name \*-devops-error.log |xargs tar zcvf /root/bkci-log.tar.gz

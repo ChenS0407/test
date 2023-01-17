@@ -6,9 +6,9 @@
 
 Building a client may involve multiple code repositories, or building different versions (such as Linux, Windows, MacOS, and so on) on multiple build environments. When pulling the same codebase on different systems, different versions of the code may be pulled due to time differences. To solve this problem, commit information for multiple repositories involved needs to be recorded in a file for each build so that it can be used later; However, when problems are found, they have to be reworked, which greatly affects the efficiency of R&D.
 
-## Blue Shield advantage
+## BKCI advantage
 
-The Blue Shield pipeline has the ability to set common environment variables to ensure that different jobs (environments) pull the same version of code, reducing the multi-version build exception rate to zero.
+The BKCI pipeline has the ability to set common environment variables to ensure that different jobs (environments) pull the same version of code, reducing the multi-version build exception rate to zero.
 
 ## solution
 

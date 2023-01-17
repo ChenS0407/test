@@ -6,7 +6,7 @@
 | :----------------------------------- | :------------------------------------------------------ |
 | BK_CI_GIT_REPO_URL                   | Pull the code library URL                               |
 | BK_CI_GIT_REPO_NAME                  | Pull the code library name                              |
-| BK_CI_GIT_REPO_ALIAS_NAME            | Pull code library alias in Blue Shield                  |
+| BK_CI_GIT_REPO_ALIAS_NAME            | Pull code library alias in BKCI                  |
 | BK_CI_GIT_REPO_BRANCH                | Pull the branch of the code base                        |
 | BK_CI_GIT_REPO_TAG                   | Pull the TAG of the code base                           |
 | BK_CI_GIT_REPO_CODE_PATH             | Pull the local relative directory path of the code base |
@@ -23,8 +23,8 @@
 | BK_CI_REPO_WEBHOOK_REPO_TYPE           | The type of code base triggered is GIT                       |
 | BK_CI_REPO_WEBHOOK_REPO_URL            | The URL of the code base that is triggered                   |
 | BK_CI_REPO_WEBHOOK_NAME                | The name of the code base that is triggered                  |
-| BK_CI_REPO_WEBHOOK_ALIAS_NAME          | Triggered code base alias in Blue Shield                     |
-| BK_CI_REPO_WEBHOOK_HASH_ID             | The triggered code base has the HASH ID in Blue Shield       |
+| BK_CI_REPO_WEBHOOK_ALIAS_NAME          | Triggered code base alias in BKCI                     |
+| BK_CI_REPO_WEBHOOK_HASH_ID             | The triggered code base has the HASH ID in BKCI       |
 | BK_CI_REPO_GIT_WEBHOOK_COMMITID        | The corresponding COMMIT ID is triggered                     |
 | BK_CI_REPO_GIT_WEBHOOK_EVENT_TYPE      | The type of event that is triggered                          |
 | BK_CI_REPO_GIT_WEBHOOK_INCLUDE_BRANCH  | Triggers the listening branch of the plug-in                 |

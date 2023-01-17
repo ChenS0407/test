@@ -868,20 +868,20 @@ The dependency allows the user to show/hide the current component based on a con
                     "id": "mail",
                     "name": "mail",
                     "disable": false,
-                    "desc": "Send to mail, supports blue whale users as well as non-blue whale users "
+                    "desc": "Send to mail, supports BK users as well as non-BK users "
                 },
                 {
                     "id": "dingtalk",
                     "name": "pinned",
                     "disable": false,
-                    "desc": "Send a single chat message to the nail number corresponding to the Blue Whale user, you need to configure the nail notification properly first, refer to: https://github.com/wenchao-h/ding-blueking"
+                    "desc": "Send a single chat message to the nail number corresponding to the BK user, you need to configure the nail notification properly first, refer to: https://github.com/wenchao-h/ding-blueking"
                 }
             ]
         },
         "send_to": {
             "label": "Send to",
             "default":"",
-            "placeholder": "The Blue Whale username that receives enterprise WeChat/Pin messages",
+            "placeholder": "The BK username that receives enterprise WeChat/Pin messages",
             "type": "user-input",
             "inputType": "all",
             "desc": "Enter a carriage return to separate multiple usernames",

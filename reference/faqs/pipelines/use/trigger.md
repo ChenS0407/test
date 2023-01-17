@@ -12,7 +12,7 @@ For example, when you want to combine feat_1 into the dev branch, write dev for 
 
 ## Q2: Where is the webhook address configured for the gitlab trigger
 
-You do not need to configure this hook. Blue Shield will register the webhook itself. After selecting the event type and saving it, the webhook will be automatically registered
+You do not need to configure this hook. BKCI will register the webhook itself. After selecting the event type and saving it, the webhook will be automatically registered
 
 
 
@@ -45,8 +45,8 @@ For example, if you enter source in the listening directory and the sourceabc di
 
 ## Q7: The listening path is configured, but the generated trigger is the listening root directory
 
-In line with expectations. The server will listen to the root directory, but Blue Shield will filter based on this path.
+In line with expectations. The server will listen to the root directory, but BKCI will filter based on this path.
 
-This trigger is targeted at Blue Shield, and Blue Shield will also filter the configured listening path to decide whether to trigger the pipeline.
+This trigger is targeted at BKCI, and BKCI will also filter the configured listening path to decide whether to trigger the pipeline.
 
 If you only want to limit it to a certain path, you need to change it manually.

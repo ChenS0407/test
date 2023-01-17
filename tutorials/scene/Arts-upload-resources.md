@@ -6,9 +6,9 @@
 
 In the process of game development, artists need to test and accept the scene resources and the effect of art configuration, and frequently update the client and server of different test clothes. However, most artists do not have a linux technical background, so they need to manually update the content to P4, and then through cross-team communication, complete the linux server environment update with the cooperation of the server developers and even the technical center platform developers. The intermediate links of communication, collaboration and waiting may take 10-30 minutes, which makes it take more than 1 hour to complete a small function test and acceptance.
 
-## Blue Shield advantage
+## BKCI advantage
 
-Blue Shield helps artists update the server and client environments independently through a graphical interface. It can now be done by one artist without any additional communication.
+BKCI helps artists update the server and client environments independently through a graphical interface. It can now be done by one artist without any additional communication.
 
 ## solution
 

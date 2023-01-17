@@ -1,53 +1,55 @@
-# **bkchat使用说明**
+# **bkchat usage instructions**
 
-BkCHAT提供两种使用版本
+BkCHAT provides two versions for use
 
-1、免技能创建模式，即无鉴权版本，用户在企业微信可执行所有蓝盾流水线
+1、No skill creation mode, i.e. no authentication version, users can execute all the BKCI pipeline in Enterprise WeChat
 
-2、自定义技能模式，用户在页面上配置自定义的操作指令以及执行人员权限，可以限制特定用户的流水线执行权限
+2、Custom skills mode, users can configure custom operation instructions and executor rights on the page, which can limit the execution rights of specific users in the pipeline
 
-## **免技能创建模式**
-1、直接打开已配置的应用号，输入“1”或者 “help” ， 点击消息右上角，会弹出对应的操作，可进行业务的绑定。
+## **free skill creation mode**
+
+1. Directly open the configured application number, enter "1" or "help", click on the upper right corner of the message, the corresponding operation will pop up, and the business can be bound.
 
 ![bkchat-usage-1.png](../../.gitbook/assets/bkchat-usage-1.png)
 
 
-2、蓝盾CI执行， 点击 “CI” ， 弹出选择“蓝盾项目”，选择后继续选择蓝盾的”流水线“，到最终的执行。
+2. To execute BKCI CI, click on "CI", then select "BKCI Project", then continue to select the "pipeline" of BKCI to the final execution.
 
 ![bkchat-usage-2.png](../../.gitbook/assets/bkchat-usage-2.png)
 
-3、标准运维执行, 支持“分组”模式的选择。
+3、Standard operation and maintenance execution, support "group" mode selection.
 
 ![bkchat-usage-3.png](../../.gitbook/assets/bkchat-usage-3.png)
 
-4、我们同时支持任务查找的功能，如下，您可自由输入你想要执行的任务，后台会给您匹配到最佳的任务。
+4. We also support the task finder function, as follows, you can freely enter the task you want to perform, and the backend will match you to the best task.
 
 ![bkchat-usage-4.png](../../.gitbook/assets/bkchat-usage-4.png)
 
-5、语音交互样例展示
+5、Sample demonstration of voice interaction
 
 ![bkchat-usage-5.png](../../.gitbook/assets/bkchat-usage-5.png)
 
 
-## **自定义技能模式**
-1、配置技能(蓝鲸页面打开bk-chatbot应用)
+## **Custom skill mode**
+
+1. Configure the skill (open the bk-chatbot app on the blue whale page)
 
 ![bkchat-usage-6.png](../../.gitbook/assets/bkchat-usage-6.png)
 
 ![bkchat-usage-7.png](../../.gitbook/assets/bkchat-usage-7.png)
 
-我们可针对参数指定正则匹配，bkchat 对话时会针对正则进行参数提取。
+We can specify a regular match for the parameters and the bkchat conversation will extract the parameters for the regular.
 
 ![bkchat-usage-8.png](../../.gitbook/assets/bkchat-usage-8.png)
 
 ![bkchat-usage-9.png](../../.gitbook/assets/bkchat-usage-9.png)
 
-2、触发任务
+2、Trigger the task
 
-在企业微信搜索“底层消息通知”这个机器人(企业微信配置)，跟它私聊对话。
+Search for the bot "bottom message notification" in Enterprise WeChat (Enterprise WeChat configuration), and have a private conversation with it.
 
 ![bkchat-usage-11.png](../../.gitbook/assets/bkchat-usage-11.png)
 
-然后按照提示依次输入任务参数，输入完成后任务会自动触发启动。 同时BKChat也支持把技能和参数一起输入，这样机器人会根据前面配置的正则进行提取参数启动任务。
+Then follow the prompts to enter the task parameters in turn, and the task will be automatically triggered to start after the input is completed. Also BKChat supports inputting skills and parameters together, so that the bot will extract the parameters to start the task according to the previously configured regular.
 
 ![bkchat-usage-10.png](../../.gitbook/assets/bkchat-usage-10.png)

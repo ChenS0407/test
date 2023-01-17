@@ -6,9 +6,9 @@
 
 When the project is in the external test period or formal operation period, various online emergencies will increase, and the rhythm of version iteration will accelerate obviously. At the same time, release builders can't be glued to their computers all the time.
 
-## Blue Shield advantage
+## BKCI advantage
 
-Through enterprise wechat robot, users can execute Blue Shield pipeline anytime and anywhere, so that CI is no longer limited by time, place and equipment
+Through enterprise wechat robot, users can execute BKCI pipeline anytime and anywhere, so that CI is no longer limited by time, place and equipment
 
 ## solution
 
@@ -16,7 +16,7 @@ Through enterprise wechat robot, users can execute Blue Shield pipeline anytime 
 
 ![img](../../.gitbook/assets/scene-wechat-robot-exe-a.png)
 
-2. Blue Shield CI execution, click "CI", pop up to select "Blue Shield Project", then continue to select Blue Shield's "pipeline", to the final execution
+2. BKCI CI execution, click "CI", pop up to select "BKCI Project", then continue to select BKCI's "pipeline", to the final execution
 
 ![img](../../.gitbook/assets/scene-wechat-robot-exe-b.png)
 

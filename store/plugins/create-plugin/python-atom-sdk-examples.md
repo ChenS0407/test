@@ -178,7 +178,7 @@ if __name__ == "__main__":
 
    1. get user input, `get_input` returns a dictionary consisting of `{"input_component_name": "user_input_content"}`, call method: `sdk.get_input().get("key")`
    2. set user input, `set_output` set user output, in command_line.py, has been wrapped into `exit_with_error` and `exit_with_succ`
-   3. get_private_configuration, the private configuration usually configures the global variables of the plugin or the account secret information which is not visible to normal users, such as the address of the Blue Whale esb gateway, the address of the requesting third-party service, etc. Call method: `sdk.get_sensitive_conf(key)`, the key indicates the configuration name, such as `sdk.get_sensitive_ conf("BK_PAAS_URL")`
+   3. get_private_configuration, the private configuration usually configures the global variables of the plugin or the account secret information which is not visible to normal users, such as the address of the BK esb gateway, the address of the requesting third-party service, etc. Call method: `sdk.get_sensitive_conf(key)`, the key indicates the configuration name, such as `sdk.get_sensitive_ conf("BK_PAAS_URL")`
    4. get_credential`, the user's private configuration, you can manage the configuration by credentials, the plugin can get this part of information by `get_credential`, call method: `sdk.get_credential("credential_id")`, credential_id is the English name of the credential
    5. get built-in variables, in addition to the above four categories, the remaining interfaces are all interfaces to get built-in variables
    6. there are also interfaces for log printing `sdk.log.info("info"), sdk.log.error("error")`

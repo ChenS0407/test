@@ -10,7 +10,7 @@ The algorithm preferentially selects the last built machine (affinity). If a res
 
 ## Q2: Can I change the threshold of the scheduling policy?
 
-Currently, only the memory threshold can be adjusted, and the default value is 80%. That is, when the memory usage of a common builder reaches 80% and other builders have free resources, tasks will be scheduled to other builders. The threshold can be modified by logging in to the Blue Shield dispatch-docker server and performing the following operations:
+Currently, only the memory threshold can be adjusted, and the default value is 80%. That is, when the memory usage of a common builder reaches 80% and other builders have free resources, tasks will be scheduled to other builders. The threshold can be modified by logging in to the BKCI dispatch-docker server and performing the following operations:
 
 ```
  The value of # threshold indicates the threshold percentage. The following uses setting the memory threshold to 70% as an example. curl -H 'Accept:application/json; charset="utf-8"' -H 'Content-Type:application/json; charset="utf-8"' -H "X-DEVOPS-UID: Admin - X "POST -- data '{" threshold" : "70"}' http://127.0.0.1:21938/api/op/dispatchDocker/docker/threshold/update
@@ -48,7 +48,7 @@ You can refer to https://docs.bkci.net/store/ci-images
 
 ## Q6: How do I remove the common builder
 
-Log in to the machine for the Blue Shield dispatch-docker service and execute`/data/src/ci/scripts/bkci-op.sh list`Get all the public builders and execute`/data/src/ci/scripts/bkci-op.sh del`operation
+Log in to the machine for the BKCI dispatch-docker service and execute`/data/src/ci/scripts/bkci-op.sh list`Get all the public builders and execute`/data/src/ci/scripts/bkci-op.sh del`operation
 
 ------
 
@@ -56,7 +56,7 @@ Log in to the machine for the Blue Shield dispatch-docker service and execute`/d
 
 ## Q1: What is the scheduling strategy for private build clusters?
 
-If there are multiple private construction machines, a private construction cluster can be formed. After selecting this cluster, the Blue Shield pipeline selects one of them to build according to a certain algorithm:
+If there are multiple private construction machines, a private construction cluster can be formed. After selecting this cluster, the BKCI pipeline selects one of them to build according to a certain algorithm:
 
 **The algorithm is as follows:**
 
@@ -84,11 +84,11 @@ If there are multiple private construction machines, a private construction clus
 
 ------
 
-## Q2: Blue Shield script starts gradle daemon process and closes it after each build. Is this controlled by devops agent?
+## Q2: BKCI script starts gradle daemon process and closes it after each build. Is this controlled by devops agent?
 
 ![img](../../../../.gitbook/assets/wecom-temp-d4178631b527e498ee7d8a0778c1fb09.png)
 
-Yes. After the Blue Shield agent completes the build task, all sub-processes started by the agent are automatically stopped. If you do not need to end the sub-processes, set the environment variable set in the bash script before starting the process: set DEVOPS_DONT_KILL_PROCESS_TREE=true`setEnv "DEVOPS_DONT_KILL_PROCESS_TREE" "true"`
+Yes. After the BKCI agent completes the build task, all sub-processes started by the agent are automatically stopped. If you do not need to end the sub-processes, set the environment variable set in the bash script before starting the process: set DEVOPS_DONT_KILL_PROCESS_TREE=true`setEnv "DEVOPS_DONT_KILL_PROCESS_TREE" "true"`
 
 ------
 
@@ -100,4 +100,4 @@ Yes. Install the agent in different directories on the private build machine and
 
 You are advised to use a private builder. The public builder DinD solution has security risks. Therefore, a private builder is required for mirroring.
 
-If Blue Shield users are trusted, they can use our delivery team's DinD **solution**
+If BKCI users are trusted, they can use our delivery team's DinD **solution**

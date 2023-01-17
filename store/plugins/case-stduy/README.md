@@ -1,3 +1,3 @@
-# Flowline plug-in development case
+# plug-in development case
 
 {% page-ref page="sendmsg.md" %}

@@ -6,13 +6,13 @@
 
 If multiple single construction machines are used all the time and different pipelines are allocated to different construction machines artificially, it will not only become a burden to maintain the construction machine itself, but more importantly, the efficiency of the construction machine is low.
 
-## Blue Shield advantage
+## BKCI advantage
 
-Blue Shield environmental management can integrate multiple single construction machines into construction clusters to improve overall resource utilization efficiency
+BKCI environmental management can integrate multiple single construction machines into construction clusters to improve overall resource utilization efficiency
 
 ## solution
 
-1. Open Blue Shield and select "Environmental Management"
+1. Open BKCI and select "Environmental Management"
 
    
 

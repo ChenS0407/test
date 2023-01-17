@@ -6,9 +6,9 @@
 
 If the pipeline notification cannot be received in a timely manner, users cannot obtain the pipeline execution status in a timely manner and perform effective intervention in certain scenarios (such as task execution error)
 
-## Blue Shield advantage
+## BKCI advantage
 
-Blue Shield has added the Stud notification plugin to send message notifications via swarm bots.
+BKCI has added the Stud notification plugin to send message notifications via swarm bots.
 
 ## solution
 
@@ -20,7 +20,7 @@ Blue Shield has added the Stud notification plugin to send message notifications
 
 ![img](../../.gitbook/assets/scene-notification-sent-nail-b.png)
 
-3. Add "Pin Message Notification" plug-in in Blue Shield pipeline. If not, please add it in Blue Shield App Market.
+3. Add "Pin Message Notification" plug-in in BKCI pipeline. If not, please add it in BKCI App Market.
 
 ![img](../../.gitbook/assets/scene-notification-sent-nail-c.png)
 

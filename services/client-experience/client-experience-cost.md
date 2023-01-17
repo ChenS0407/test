@@ -1,8 +1,7 @@
-# **部署移动端版本体验需要的硬件资源**
-- 一个完成备案的域名和证书；
-- 一台2核4G的服务器；
-- 一个腾讯云COS bucket，存储应用和提供下载；
-- 一个腾讯云CLB，提供前端访问的接入、负载均衡、DDoS防护等能力；
+# **Hardware resources needed to deploy the mobile version of the experience**
+- A completed domain name and certificate for filing.
+- A 2-core 4G server.
+- One Tencent Cloud COS bucket, which stores applications and provides downloads.
+- a Tencent Cloud CLB, providing access, load balancing, DDoS protection and other capabilities for front-end access.
 
-
-***目前本功能仅支持接入企业微信**
+**Currently this feature only supports access to enterprise WeChat**

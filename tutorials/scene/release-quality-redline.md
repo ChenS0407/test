@@ -6,9 +6,9 @@
 
 Release transition/launch is a key point in the development process. Take transition testing, after which the lead role shifts from development to testing, and the code is generally not allowed to change at will. Therefore, quality control of this node is very important, typically unit testing, automated test cases, defect and security problem code checks, etc. If the code coverage rate is too low, automated use cases fail to be executed, or too many code check alarms are generated, the code quality is poor, and the code should not be retested.
 
-## Blue Shield advantage
+## BKCI advantage
 
-Blue Shield quality red line controls the behavior of the pipeline by setting quality standards, so that its output must meet the requirements of quality standards. It can support Git Merge Request, daily construction, version transfer, version release and other scenarios to ensure the quality of software products.
+BKCI quality red line controls the behavior of the pipeline by setting quality standards, so that its output must meet the requirements of quality standards. It can support Git Merge Request, daily construction, version transfer, version release and other scenarios to ensure the quality of software products.
 
 ## solution
 

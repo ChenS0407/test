@@ -14,9 +14,9 @@ In the actual development, we carry out branch management as follows:
 
 When a developer's branch is merged into dev, a Merge Request and code review are initiated.
 
-## Blue Shield advantage
+## BKCI advantage
 
-Blue Shield quality red line controls the behavior of the pipeline by setting quality standards, so that its output must meet the requirements of quality standards. It can support Git Merge Request, daily construction, version transfer, version release and other scenarios to ensure the quality of software products.
+BKCI quality red line controls the behavior of the pipeline by setting quality standards, so that its output must meet the requirements of quality standards. It can support Git Merge Request, daily construction, version transfer, version release and other scenarios to ensure the quality of software products.
 
 ## solution
 

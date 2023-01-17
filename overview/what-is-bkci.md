@@ -2,7 +2,7 @@
 
 ![](../.gitbook/assets/image%20%2818%29.png)
 
-Blue Whale Continuous Integration Platform (codenamed bk-ci) is a free and open source CI service that helps you automate build-test-release workflows to deliver your products consistently, quickly, and with high quality.
+BK Continuous Integration Platform (codenamed bk-ci) is a free and open source CI service that helps you automate build-test-release workflows to deliver your products consistently, quickly, and with high quality.
 
 Use bk-ci to block out all the tedious aspects of the development process and let you focus on coding. It is commonly used for:
 

@@ -6,9 +6,9 @@
 
 Over time, there are multiple branching versions of the project; The core task of pipeline corresponding to each branch is similar, the difference may lie in: different builder, different branch name or different language directory, etc. When the core of the pipeline changes, it is usually necessary to modify each pipeline mechanically, which is very inefficient and prone to errors.
 
-## Blue Shield advantage
+## BKCI advantage
 
-Using the Blue Shield pipeline template and replication functions, users of the same project do not need to fill in a large number of public configurations when creating or maintaining the pipeline.
+Using the BKCI pipeline template and replication functions, users of the same project do not need to fill in a large number of public configurations when creating or maintaining the pipeline.
 
 ## solution
 

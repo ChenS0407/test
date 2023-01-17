@@ -6,9 +6,9 @@
 
 In our daily construction, in order to facilitate subsequent maintenance, we usually separate some public parts to form a "common pipeline" for other pipelines to call; Or, in some scenarios, pipeline execution is required to be in sequence. Pipeline A is executed, and then pipeline B is executed.
 
-## Blue Shield advantage
+## BKCI advantage
 
-Blue Shield implements call execution between different pipelines through the "subpipeline" plug-in
+BKCI implements call execution between different pipelines through the "subpipeline" plug-in
 
 ## solution
 

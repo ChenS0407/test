@@ -10,7 +10,7 @@ No ci-dockerhost available, need to check:
 
 2. If the dispatch still fails, check whether the ci-dispatch logs are abnormal. Or log involving dockerhost ip.
 
-The reason was that when Blue Shield was deployed, due to limited server resources, the construction machine microservice gateway was placed on one machine, resulting in high memory usage of the construction machine. When building the environment, the construction machine could not be found. Now those errors before the construction machine was deployed on another machine are gone.
+The reason was that when BKCI was deployed, due to limited server resources, the construction machine microservice gateway was placed on one machine, resulting in high memory usage of the construction machine. When building the environment, the construction machine could not be found. Now those errors before the construction machine was deployed on another machine are gone.
 
 3. The startup fails if host resources are insufficient. Make sure that the common builder node DISK_LOAD<95%, CPU_LOAD<100%, and MEM_LOAD <80%
 
@@ -32,9 +32,9 @@ Execute on a common build machine`grep oom /var/log/messages`The matching record
 
 **Cause 2**: The load on the CI machine is too high. As a result, the service response times out or the service is abnormal
 
-The Blue Shield page is stuck. During pipeline execution, go to CI machine using top to see that the machine load is very high.
+The BKCI page is stuck. During pipeline execution, go to CI machine using top to see that the machine load is very high.
 
-This problem often occurs when a file upload body is too large. The size that can be uploaded depends on the configuration, IO, and network of the Blue Shield machine. Therefore, it is not recommended to upload a package larger than 8 GB.
+This problem often occurs when a file upload body is too large. The size that can be uploaded depends on the configuration, IO, and network of the BKCI machine. Therefore, it is not recommended to upload a package larger than 8 GB.
 
 ------
 
@@ -58,9 +58,9 @@ If it is a **public builder**, check whether the service of the public builder b
 
 This is common on **private build machines.** It is usually caused by agent installation exceptions. Here are some known causes:
 
-1. For example, the Blue Shield domain name cannot be resolved or the Blue Shield service is unreachable
-2. The agent version is incorrectly installed. For example, if the linux agent package is installed on the mac, delete the Blue Shield agent installation package and reinstall the agent of the corresponding version
-3. It can be found in the agentDaemon.log file under logs in the Blue Shield agent installation directory`too many open files`, execute on the machine`ulimit -n`The result shows that the number of files that can be opened is too small. The default value is 1024. You can increase the value and reinstall the Blue Shield agent
+1. For example, the BKCI domain name cannot be resolved or the BKCI service is unreachable
+2. The agent version is incorrectly installed. For example, if the linux agent package is installed on the mac, delete the BKCI agent installation package and reinstall the agent of the corresponding version
+3. It can be found in the agentDaemon.log file under logs in the BKCI agent installation directory`too many open files`, execute on the machine`ulimit -n`The result shows that the number of files that can be opened is too small. The default value is 1024. You can increase the value and reinstall the BKCI agent
 
 ![img](../../../../.gitbook/assets/wecom-temp-2cf366a83acf24ef09ae7dff30c47354.png)
 

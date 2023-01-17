@@ -1,90 +1,90 @@
-# 常用插件安装
+# Common Plugin Installation
 
-本篇文章将指导你如何在 bk-ci 中安装插件。
+This article will guide you on how to install plugins in bk-ci.
 
-## 常用插件下载地址
+## Commonly used plugins download address
 
 * **pushJobFile**
 
-> 利用作业平台分发制品到目标服务器
+> Distribute products to the target server using the job platform
 
 https://github.com/ci-plugins/pushJobFile
 
-编译环境：无编译环境
+Compile environment: No compile environment
 
-开发语言：java
+Development language: java
 
 
 
 * **executeJob**
 
-> 调用作业平台执行作业
+> call the job platform to execute a job
 
 https://github.com/ci-plugins/executeJob
 
-编译环境：无编译环境
+Compile environment: no compile environment
 
-开发语言：java
+Development language: java
 
 
 
 * **executeJobScript**
 
-> 调用作业平台执行脚本
+> call the job platform to execute a script
 
 https://github.com/ci-plugins/executeJobScript
 
-编译环境：无编译环境
+Compile environment: no compile environment
 
-开发语言：java
+Development language: java
 
 
 
 * **sendEmail**
 
-> 发送通知邮件
+> Send notification emails
 
 https://github.com/ci-plugins/sendEmail
 
-编译环境：无编译环境
+Compiler environment: no compiler environment
 
-开发语言：java
+Development language: java
 
 
 
 * **checkout**
 
-> git 拉取代码
+> git pull code
 
 https://github.com/TencentBlueKing/ci-checkout
 
-编译环境：编译环境（Linux+ macOS + Windows）
+Compile environment: Compile environment (Linux + macOS + Windows)
 
-开发语言：java
+Development language: java
 
 
 
 * **sendmsg**
 
-> 1. 发送企业微信消息(需要配置ESB)
-> 2. 发送邮件消息(需要配置ESB)
-> 3. 发送企业微信群消息
+> 1. send enterprise weibo messages (requires ESB configuration)
+> 2. send email messages (requires ESB configuration)
+> 3. send enterprise WeChat group messages
 
 https://github.com/wenchao-h/bkci-plugin-sendmsg
 
-编译环境：（Linux + Windows + MacOS）
+Compiler Environment: (Linux + Windows + MacOS)
 
-开发语言：Python
+Development language: Python
 
 ---
 
-## 安装步骤
+## Installation steps
 
-以安装 **pushJobFile** 插件为例，安装步骤基本一致。
+Take the installation of **pushJobFile** plugin as an example, the installation steps are basically the same.
 
-### 一、下载安装包
+### I. Download the installation package
 
-按照插件下载地址，先下载好安装包。
+According to the plugin download address, download the installation package first.
 
 ![](../../.gitbook/assets/download_plugin_zip.png)
 
@@ -92,88 +92,88 @@ https://github.com/wenchao-h/bkci-plugin-sendmsg
 
 ---
 
-### 二、进入工作台
+### II. Accessing the workbench
 
-路径：
+Path.
 
-蓝盾----->研发商店---->工作台
+BlueShield ----->R&D Store ---->Workbench
 
 ![](../../.gitbook/assets/toworktable.png)
 
 ---
 
-### 三、新增插件
+### III. New plugins
 
 ![](../../.gitbook/assets/add_plugin.png)
 
-名称：可以自定义填写。
+Name: can be filled in custom.
 
-标识：必须和要安装的插件安装包文件名一致。大小写也必须一致。
+Identifier: must be the same as the name of the plugin installer file to be installed. The case must also be the same.
 
-调试项目：选择调试插件的项目。
+Debug project: Select the project for debugging the plug-in.
 
-开发语言：选择插件开发的语言。
+Development language: Select the language for the plug-in development.
 
-自定义前端：如果无需自定义前端，均选否即可。
+Custom front-end: If you do not need to customize the front-end, you can choose No.
 
 ---
 
-### 四、插件配置
+### IV. Plugin configuration
 
-插件需要做的配置，GitHub 页面中均有介绍。https://github.com/TencentBlueKing/ci-pushJobFile
+plug-ins need to do the configuration, GitHub page are introduced. https://github.com/TencentBlueKing/ci-pushJobFile
 
-pushJobFile 需要配置：
+pushJobFile need to configure.
 
-1.插件配置
-插件上架时，需要配置蓝鲸智云相关参数，路径：设置->私有配置
+1. plug-in configuration
+When the plug-in on the shelf, you need to configure the relevant parameters of BK Smart Cloud, the path: Settings -> Private Configuration
 
-2.作业平台配置
-请将蓝鲸持续集成平台后台微服务artifactory所在机器IP全部加入至作业平台的IP白名单中，在作业平台的“平台管理->IP白名单”中进行配置，生效范围选择文件分发，若artifactory扩容，需将扩容机器IP更新至白名单中。
+2. Job platform configuration
+Please add all the IPs of the machines where artifactory is located in the backend of BK continuous integration platform to the IP whitelist of the job platform, and configure them in the "Platform Management->IP Whitelist" of the job platform. IP update to the whitelist.
 
 
 
-**插件配置**
+**Plug-in configuration**
 
-插件上架时，需要配置蓝鲸智云相关参数，路径：设置->私有配置
+When the plug-in is on the shelf, you need to configure the relevant parameters of BK Smart Cloud, the path: Settings->Private Configuration
 
 ![](../../.gitbook/assets/private_config.png)
 
-在 蓝鲸中控机 中，按照 GitHub 中指引，获取相关变量。
+In the BK Central Controller, follow the GitHub guidelines to get the relevant variables.
 
 ```
 source ${CTRL_DIR:-/data/install}/load_env.sh
 
-echo "BK_APP_ID      $BK_CI_APP_CODE"
-echo "BK_APP_SECRET  $BK_CI_APP_TOKEN"
-echo "ESB_HOST       $BK_PAAS_PRIVATE_URL"
-echo "JOB_HOST       $BK_JOB_PUBLIC_URL"
+echo "BK_APP_ID $BK_CI_APP_CODE"
+echo "BK_APP_SECRET $BK_CI_APP_TOKEN"
+echo "ESB_HOST $BK_PAAS_PRIVATE_URL"
+echo "JOB_HOST $BK_JOB_PUBLIC_URL"
 
-# 参考输出
-BK_APP_ID      bk_ci
-BK_APP_SECRET  略
-ESB_HOST       http://paas.service.consul:80
-JOB_HOST       http://job.bktencent.com:80
+# Reference output
+BK_APP_ID bk_ci
+BK_APP_SECRET slightly
+ESB_HOST http://paas.service.consul:80
+JOB_HOST http://job.bktencent.com:80
 ```
 
-获取变量后，**新增配置** 填入各个变量
+After getting the variables, **add configuration** fill in each variable
 
 ![](../../.gitbook/assets/add_plugin_var.png)
 
 
 
-**作业平台配置**
+**Working platform configuration**
 
-请将蓝鲸持续集成平台后台微服务artifactory所在机器IP全部加入至作业平台的IP白名单中，在作业平台的“平台管理->IP白名单”中进行配置，生效范围选择文件分发，若artifactory扩容，需将扩容机器IP更新至白名单中。
+Please add all the IPs of the microservice artifactory in the backend of BK Continuous Integration Platform to the IP whitelist of the job platform, and configure them in the "Platform Management->IP Whitelist" of the job platform. IP update to the whitelist.
 
 
 
-1、先在中控机中获取 artifactory 机器的 IP
+1、Get the IP of the artifactory machine in the central control machine first
 
 cat /data/install/install.config| grep artifactory
 
 
 
-2、在作业平台中，把IP添加至白名单
+2、In the operation platform, add the IP to the whitelist
 
 ![](../../.gitbook/assets/image-20220401162613444.png)
 
@@ -181,46 +181,66 @@ cat /data/install/install.config| grep artifactory
 
 ---
 
-### 五、上架插件
+### V. Racking plugins
 
-配置完成后，返回工作台，选择上架插件
+After the configuration is complete, return to the workbench and select Shelf Plugin
 
 ![](../../.gitbook/assets/image-20220401163151231.png)
 
-按照指引填写各信息，并上传从 GitHub 获取到的插件安装包
+Follow the instructions to fill in the information and upload the plugin installation package you got from GitHub
 
 ![](../../.gitbook/assets/image-20220401163739926.png)
 
-点击提交后，会进入到插件测试阶段。此处插件都是已经开发完成的，直接点击**继续**跳过测试即可。
+When you click Submit, you will be taken to the plugin testing phase. Here the plugins are already developed, just click **Continue** to skip the test.
 
 ![](../../.gitbook/assets/image-20220401163907672.png)
 
-插件 **pushJobFile**成功上架到研发商店，可以进行插件的安装。
+The plugin **pushJobFile** was successfully shelved to the R&D store and is ready for plugin installation.
 
 
 
 ---
 
-### 六、安装插件
+### VI. Installation of plug-ins
 
-插件成功上架后，可以进行插件的安装。只有安装了对应插件的项目，才可以使用相应插件。
+After the plug-in is successfully shelved, you can install the plug-in. Only projects that have installed the corresponding plug-ins can use the corresponding plug-ins.
 
-「研发商店」 -「点击对应插件」-「安装」-「选择对应项目」-「安装」
+"R&D Store" - "Click on the corresponding plug-ins" - "Installation" - "Select the corresponding project" - "installation"
 
 
 
-**进入研发商店、选择对应插件**
+**Enter the R&D store and select the corresponding plug-in**
 
 ![](../../.gitbook/assets/image-20220606160525103.png)
 
-**选择安装插件**
+**Select the plugin to install**
 
 ![](../../.gitbook/assets/image-20220606160351809.png)
 
-**选择插件要安装到的项目**
+**Select the project the plugin is to be installed to**
+
+![](../../.gitbook/assets/image-20220606160702553.png)
+
+---
+
+### VI. Installation of plug-ins
+
+After the plug-ins are successfully installed on the shelves, you can install the plug-ins. Only the project with the corresponding plug-in installed can use the corresponding plug-in.
+
+"R&D Store" - "Click the corresponding plug-in" - "Installation" - "Select the corresponding project" - "Installation"
+
+
+
+**Enter the R&D store and select the corresponding plug-in**
+
+![](../../.gitbook/assets/image-20220606160525103.png)
+
+**Select the plug-in to install**![](../../.gitbook/assets/image-20220606160351809.png)
+
+**Select the project to which the plugin is to be installed**
 
 ![](../../.gitbook/assets/image-20220606160702553.png)
 
 
 
-至此插件 **pushJobFile**已经成功完成安装，可以按照此方法，进行其他插件的安装。
+So far the plugin **pushJobFile** has been successfully installed, you can follow this method to install other plug-ins.

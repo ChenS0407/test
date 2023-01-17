@@ -44,13 +44,13 @@ It was fixed in v1.7
 
 Known problem, scope of impact: **Version 1.5.x**
 
-**Q: Blue Shield logs are generated in a disorderly sequence**
+**Q: BKCI logs are generated in a disorderly sequence**
 
 ![](../../.gitbook/assets/企业微信截图_16316936739387.png)
 
 Known problem, scope of impact: **Version 1.5.x**
 
-**Q: When Blue Shield pipeline applies for permission, click "Apply", but the page does not go to the permission center. F12 displays an error message indicating bkiam v3 failed**
+**Q: When BKCI pipeline applies for permission, click "Apply", but the page does not go to the permission center. F12 displays an error message indicating bkiam v3 failed**
 
 ![](../../.gitbook/assets/企业微信截图_16384143961812.png)
 

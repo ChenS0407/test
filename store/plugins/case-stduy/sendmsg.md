@@ -1,8 +1,8 @@
-# **sendmsg- Universal message sending plug-in**
+# sendmsg-Universal Messaging Plugin
 
 ## conception
 
-Enterprise wechat messages and emails can be sent through the Blue Whale ESB interface. Group messages can also be sent text format information and markdown information through the webhook address of the group robot. text format information also supports @group members
+Enterprise wechat messages and emails can be sent through the BK ESB interface. Group messages can also be sent text format information and markdown information through the webhook address of the group robot. text format information also supports @group members
 
 ## Front-end design
 
@@ -122,7 +122,7 @@ Message sending mode Select the checkbox. There are two types of checkbox compon
 }
 ```
 
-You can view the visual result of task.json in Blue Shield "R&D Store", "Console" and "Debug task.json"
+You can view the visual result of task.json in BKCI "R&D Store", "Console" and "Debug task.json"
 
 ![img](../../../.gitbook/assets/image-plugin-casestudy-sendmsg3.png)
 

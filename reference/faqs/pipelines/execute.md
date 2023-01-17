@@ -39,7 +39,7 @@ curl -s -u elastic:$BK_ES7_ADMIN_PASSWORD -X DELETE http://$BK_ES7_IP:9200/index
 
 The default plug-in timeout period is 900 minutes. If the plug-in does not terminate within the timeout period, the process or project service is usually abnormal.
 
-Log in to the Blue Shield machine and restart the service
+Log in to the BKCI machine and restart the service
 
 ```
 systemctl status bk-ci-project.service
@@ -52,9 +52,9 @@ systemctl status bk-ci-process.service
 
 Common reasons are:
 
-1. If the Agent version of the client is not updated after the Blue Shield version is updated. This may cause this problem.
+1. If the Agent version of the client is not updated after the BKCI version is updated. This may cause this problem.
 2. Verify that the variable DEVOPS_DONT_KILL_PROCESS_TREE is added to the machine.
-3. If an occasional fault occurs, the process of Blue Shield may occasionally fail due to high resource usage. You can try restarting the process process.
+3. If an occasional fault occurs, the process of BKCI may occasionally fail due to high resource usage. You can try restarting the process process.
 4. The builder receives process termination signals slowly due to network and resource problems. Builder resources and networks can be checked.
 
 ## Q5: remote API remote trigger pipeline, display no permission 2101008

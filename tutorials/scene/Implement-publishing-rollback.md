@@ -6,9 +6,9 @@
 
 For business operation and maintenance, business release and rollback processes are mechanically fixed. Some steps, such as pulling down code for source dependency packaging, can be complex and time-consuming.
 
-## Blue Shield advantage
+## BKCI advantage
 
-Blue Shield is used to assemble various processes of publishing and rolling back into different plug-ins, and one pipeline connects the whole process of CI/CD to realize business publishing and rolling back operations.
+BKCI is used to assemble various processes of publishing and rolling back into different plug-ins, and one pipeline connects the whole process of CI/CD to realize business publishing and rolling back operations.
 
 ## solution
 
@@ -30,7 +30,7 @@ The plug-in configuration is as follows:
 
 3. Compile, package and archive
 
-Compile packaging should only be performed at release build time, not at rollback time; We use the Blue Shield execution condition option to control whether to perform this step. In the red box, we determine whether the pipeline parameter rollback is true. If false, we skip the compile packing step
+Compile packaging should only be performed at release build time, not at rollback time; We use the BKCI execution condition option to control whether to perform this step. In the red box, we determine whether the pipeline parameter rollback is true. If false, we skip the compile packing step
 
 ![img](../../.gitbook/assets/scene-Implement-publishing-rollback-d.png)
 

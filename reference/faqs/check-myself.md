@@ -1,10 +1,10 @@
 # Service corresponding function
 
-Each microservice of Blue Shield corresponds to each function. If a function is abnormal, check the corresponding service logs first. Service log paths refer to [basic concepts](./user-guide.md)
+Each microservice of BKCI corresponds to each function. If a function is abnormal, check the corresponding service logs first. Service log paths refer to [basic concepts](./user-guide.md)
 
 | microservice    | function                                               |
 | --------------- | ------------------------------------------------------ |
-| gateway         | Blue shield gateway                                    |
+| gateway         | BKCI gateway                                    |
 | artifactory     | Artifact Services, the default artifact repository     |
 | dockerhost      | Common builder                                         |
 | environment     | Private builder service. Import and manage the builder |
@@ -20,8 +20,8 @@ Each microservice of Blue Shield corresponds to each function. If a function is 
 | agentless       | Non-compile environment                                |
 | auth            | authentication                                         |
 | log             | Build log                                              |
-| notify          | Blue Shield has built-in notification services         |
-| openapi         | Blue Shield API service                                |
+| notify          | BKCI has built-in notification services         |
+| openapi         | BKCI API service                                |
 
 For detailed component descriptions and associations, see [bkci Components](../../overview/components)
 

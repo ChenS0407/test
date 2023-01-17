@@ -68,7 +68,7 @@
 
    The build machine uses Ugit
 
-   Blue Shield needs to use native git pull code. If the builder uses Ugit, the Blue Shield checkout will fail. You need to reinstall native git.
+   BKCI needs to use native git pull code. If the builder uses Ugit, the BKCI checkout will fail. You need to reinstall native git.
 
    ## Q3: Failed to obtain credentials
 
@@ -88,13 +88,13 @@
 
    ① This is the old version of the checkout plug-in problem, has been fixed.
 
-   ② If an error occurs, the error is caused by the inconsistency between the bcprov-jdk version on the Blue Shield server and that on the builder.
+   ② If an error occurs, the error is caused by the inconsistency between the bcprov-jdk version on the BKCI server and that on the builder.
 
    Please check whether the version is consistent:
 
    Builder: agent directory
 
-   Blue shield server: / data/bkce/ci/ticket/lib /
+   BKCI server: / data/bkce/ci/ticket/lib /
 
    If not, reinstall the construction machine agent to solve the problem.
 
@@ -108,7 +108,7 @@
 
    Cause: No file is matched
 
-   This is a common error caused by file path problems. By default, the upload starts with Blue Shield's ${WORKSPACE} and matches artifacts with a relative path.
+   This is a common error caused by file path problems. By default, the upload starts with BKCI's ${WORKSPACE} and matches artifacts with a relative path.
 
    Therefore, if the corresponding artifact is in the lower directory of ${WORKSPACE}, you need to fill in the path/file
 
@@ -126,7 +126,7 @@
 
    ## Q1: After the python environment variable is added, it does not take effect during job execution. (job error "System cannot find the specified file")
 
-   Since Blue Shield agent and Blue Whale agent use the system account, the environment variables added to the administrator account do not take effect. You need to add python.exe and pip3.exe to the system environment variables and restart the operating system
+   Since BKCI agent and BK agent use the system account, the environment variables added to the administrator account do not take effect. You need to add python.exe and pip3.exe to the system environment variables and restart the operating system
 
    ## Q2: windows builder pipeline execution failed to open exe using python
 
@@ -216,11 +216,11 @@
 
    ## Q3: An error occurs when the Unity bat script is successfully executed on the builder
 
-   View the **script execution log.** It is found that UnityShaderCompiler with 88 threads is enabled during local execution. However, some UnityShaderCompiler fails to be mounted when Blue Shield is executed.
+   View the **script execution log.** It is found that UnityShaderCompiler with 88 threads is enabled during local execution. However, some UnityShaderCompiler fails to be mounted when BKCI is executed.
 
    Failed to get ipc connection from UnityShaderCompiler.exe shader compiler!
 
-   Cause: Blue Shield needs to start the exe process to collect errors and logs. If the number of created processes exceeds the limit, the process fails to be started and the flow fails.
+   Cause: BKCI needs to start the exe process to collect errors and logs. If the number of created processes exceeds the limit, the process fails to be started and the flow fails.
 
    Solution: Increase the number of processes that can be started by the system.
 
@@ -228,11 +228,11 @@
 
    ## Q4: Unable to execute programs with UI interface
 
-   Specific performance: The bat script can be executed on the target machine with the same script, but cannot be executed on Blue Shield or job platform
+   Specific performance: The bat script can be executed on the target machine with the same script, but cannot be executed on BKCI or job platform
 
-   The Blue Shield team explains:
+   The BKCI team explains:
 
-   windows agent, the third-party builder of Blue Shield, starts as a system service by default. When programs with UI are started through the agent, an error occurs or the interface is invisible
+   windows agent, the third-party builder of BKCI, starts as a system service by default. When programs with UI are started through the agent, an error occurs or the interface is invisible
 
    Cause: All processes started by the Windows Service run in Session0. Session0 cannot display information or UI Windows to desktop users.
 
@@ -243,7 +243,7 @@
 
    **Note 1: The agent started in this way does not have the startup function.**
 
-   **Note 2: After the Blue Shield agent completes the build task, it automatically stops all sub-processes started by the agent. If you do not need to end the sub-processes, you can set the environment variable set DEVOPS_DONT_KILL_PROCESS_TREE=true before starting the process**
+   **Note 2: After the BKCI agent completes the build task, it automatically stops all sub-processes started by the agent. If you do not need to end the sub-processes, you can set the environment variable set DEVOPS_DONT_KILL_PROCESS_TREE=true before starting the process**
 
    **This is the only temporary solution, because that's how the agent was originally designed**
 
@@ -251,7 +251,7 @@
 
    ## Q5:batch plug-in, unable to identify the text box variables brought back to the car
 
-   Blue Shield is variable-rendered in a prerendered manner. The variable has been rendered to replace the contents of the plugin.
+   BKCI is variable-rendered in a prerendered manner. The variable has been rendered to replace the contents of the plugin.
 
    batch plug-in simulation command line execution, encountered back to the car text box, it will be identified as execution.
 

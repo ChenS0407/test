@@ -26,7 +26,7 @@ Can check artifactory blueking users whether normal, speaking, reading and writi
 
 Then check the artifactory log file for errors.
 
-## Q4: Error bkiam v3 failed (Environment Management) (Builder) occurred when Blue Shield was adding nodes.
+## Q4: Error bkiam v3 failed (Environment Management) (Builder) occurred when BKCI was adding nodes.
 
 ![img](../../.gitbook/assets/image-20220301101202-MyIAk.png)
 
@@ -89,4 +89,4 @@ update devops_process.T_PIPELINE_SETTING set MAX_CON_RUNNING_QUEUE_SIZE=100 wher
 
 ![img](../../.gitbook/assets/var_error_2102004.png)
 
-When uploading, you need to fill in the full path of the variable containing the file name. This functionality relies on the Blue Shield artifact Library.
+When uploading, you need to fill in the full path of the variable containing the file name. This functionality relies on the BKCI artifact Library.

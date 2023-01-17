@@ -12,9 +12,9 @@
 
 https://docs.gitlab.com/ee/api/branches.html
 
-4. If GitLab is accessed using https. Check whether http - >https is performed in the code base. Blue Shield defaults to http for code base access.
+4. If GitLab is accessed using https. Check whether http - >https is performed in the code base. BKCI defaults to http for code base access.
 
-If no skip is performed, please click this temporary solution to modify the Blue Shield file:
+If no skip is performed, please click this temporary solution to modify the BKCI file:
 
 ```
 vim /data/bkce/etc/ci/application-repository.yml
@@ -35,8 +35,8 @@ systemctl restart bk-ci-repository.service
 
 ![img](../../.gitbook/assets/QQ截图20221228181708.png)
 
-SSH Blue Shield of this version cannot be resolved. If this error occurs, you are advised to use HTTP for association.
+SSH BKCI of this version cannot be resolved. If this error occurs, you are advised to use HTTP for association.
 
 ## Q2: Failed to associate the GitHub codebase
 
-There are still some issues with Blue Shield's connection to GItHub. If you must use the GitHub codebase, follow this method. [How do I associate the GitHub codebase](https://bk.tencent.com/s-mart/community/question/3184?type=article)
+There are still some issues with BKCI's connection to GItHub. If you must use the GitHub codebase, follow this method. [How do I associate the GitHub codebase](https://bk.tencent.com/s-mart/community/question/3184?type=article)

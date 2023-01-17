@@ -1,4 +1,4 @@
-# **Blue Whale related materials**
+# **BK related materials**
 
 {% page-ref page="bk-tutorial.md" %}
 

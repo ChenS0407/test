@@ -18,7 +18,7 @@
    
       2. If there is a registered url in gitlab, the url is [http://域名/external/scm/codegit/commit](http://xn--eqrt2g/external/scm/codegit/commit) and then click edit to view the View detail. As in Figure 2
    
-      3. check the error details sent, as in Figure 3. check if the network from gitlab to the Blue Shield machine is reachable, such as if the gitlab server can resolve the Blue Shield domain name. 5.
+      3. check the error details sent, as in Figure 3. check if the network from gitlab to the BKCI machine is reachable, such as if the gitlab server can resolve the BKCI domain name. 5.
    
    If all the above is OK, on the machine where the process service is deployed, run grep "Trigger gitlab build" $BK\_HOME/logs/ci/process/process-devops.log and search the logs for the triggered entry log to see the request body that gitlab pushed over. body.
    
@@ -72,4 +72,4 @@ It is recommended that the maximum be no more than 100
 
 ## Q4: Timing triggered pipeline, the time display is not correct, and the trigger time is not correct
 
-![](../../../../.gitbook/assets/wecom-temp-26d5087b12647b6801f5d8471eeb3ee6.png)Please check if the time of Blue Shield server is normal
+![](../../../../.gitbook/assets/wecom-temp-26d5087b12647b6801f5d8471eeb3ee6.png)Please check if the time of BKCI server is normal
