@@ -1,6 +1,7 @@
 # 5 minutes to read BKCI pipeline
 bk-ci can help you quickly implement a continuous delivery pipeline to compile, test, and deploy your application. The following tutorial and documentation guide will show you how to configure and manage a continuous integration, continuous delivery (CI/CD) pipeline in bk-ci.
 The following is the complete logic diagram of the pipeline:
+
 ![](../.gitbook/assets/image%20%283%29.png)
 
 ## Task
@@ -9,13 +10,14 @@ That's a single task, like pulling up the GitHub repository code.
 It can run in a built environment, such as macOS; It can also be scheduled as a normal task that does not require a build environment. It has the following features:
 * Consists of multiple Tasks\(plugins \)
 * If a Task fails, the Job fails and other tasks will not run
-![](../.gitbook/assets/image%20%2817%29%20%281%29%20%281%29%20%281%29.png)
+* ![](../.gitbook/assets/image%20%2817%29%20%281%29%20%281%29%20%281%29.png)
 
 ## Stage
 * Consists of multiple jobs
 * Jobs in the same Stage are executed in parallel, and jobs are independent of each other
 * When a Job fails, the Stage fails
-![](../.gitbook/assets/image%20%2825%29%20%281%29%20%281%29.png)
+* ![](../.gitbook/assets/image%20%2825%29%20%281%29%20%281%29.png)
+* 
 
 ## Pipeline
 
@@ -58,7 +60,7 @@ Also known as a build machine, in order to compile, test, or deploy your code, y
 
 * Runs inside the node's docker
 
-If the operating system of your node is Linux, the ** build resource type ** in the Job Details page has an additional option: Linux build image. If this option is selected, the pipeline will make full use of your node's CPU, MEM, and other dynamic resources after running the Job in the following ways:
+If the operating system of your node is Linux, the **build resource type** in the Job Details page has an additional option: Linux build image. If this option is selected, the pipeline will make full use of your node's CPU, MEM, and other dynamic resources after running the Job in the following ways:
 
 * run the docker run command on the node assigned to the Job to start the image
 

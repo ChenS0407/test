@@ -5,7 +5,7 @@ Job, which can run in a build environment, such as macOS; It can also be schedul
 * Consists of multiple Tasks\(plugins\);
 * If a Task fails, the Job fails and other tasks will not run.
 
-  ![](../../.gitbook/assets/image%20%2817%29%20%281%29%20%281%29.png)
+  ![](../../.gitbook/assets/image%20%2817%29%20%281%29%20%281%29%20%281%29.png)
 
 ## WORKSPACE
 

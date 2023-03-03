@@ -22,8 +22,6 @@
 
 Add a new stage
 
-
-
 ![](../../.gitbook/assets/image-20211213100650213.png)
 
 Add checkout gitlab plug-in, associate the created code base, and pull by branch

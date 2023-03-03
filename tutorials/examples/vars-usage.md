@@ -8,11 +8,12 @@
 
 * Click Trigger to add the variable message
 
-  ![](../../.gitbook/assets/image-20220301101202-sbynv.png)
-
 * Add stage, select the Python script execution plugin under Job, and use variables via ${message}
 
-  ![](../../.gitbook/assets/image-20211210111540640.png)
+  ![](../../.gitbook/assets/image-20220301101202-sbynv.png)
+
+  
+
 
 Add shell plug-ins that use variables with ${message}
 

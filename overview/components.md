@@ -2,7 +2,7 @@
 
 ![](../.gitbook/assets/image%20%2815%29.png)
 
-蓝鲸持续集成平台\(简称bk-ci \)是基于 kotlin/java/js/go/lua/shell等多种语言编写实现的，采用完全前后分离，插件式开发，具备高可用可扩展的服务架构设计：
+BK continuous integration platform  (bk-ci for short) is written and implemented based on multiple languages such as kotlin/java/js/go/lua/shell. It adopts complete separation of front and back, plug-in development, and highly available and extensible service architecture design：
 
 * **Front-end & Interface Gateway\(WebAPI Gateway & FrontEnd\):**
   * **WebAPI Gateway:** by OpenResty, including the docking user login and identity authentication, and the back-end API of the **Consul** service discovery forwarding lua script and Nginx configuration
