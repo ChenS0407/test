@@ -6,7 +6,13 @@ Follow these steps to associate your code base with bk-ci (gitlab is an example 
 
   
 
-  ![](../.gitbook/assets/image%20%2842%29.png)
+  ![](../.gitbook/assets/link_repo_1.png)
+
+
+
+![](../.gitbook/assets/link_repo_2.png)
+
+
 
 Currently supported codebase types are:
 * SVN
