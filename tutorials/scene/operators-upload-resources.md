@@ -20,6 +20,6 @@ Game operators use GIT to upload art and configuration files to the repository
 
 ![](../../.gitbook/assets/scene-operators-upload-resources-b.png)
 
-The game operator opens BKCI, clicks "Execute" and waits for the execution to end
+The game operator opens BKCI, clicks "Run" and waits for the execution to end
 
 ![](../../.gitbook/assets/scene-operators-upload-resources-c.png)

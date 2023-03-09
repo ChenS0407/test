@@ -4,7 +4,7 @@ Follow these steps to associate your code base with bk-ci (gitlab is an example 
 
 2. Select associated Gitlab code base (if the credential is empty, you can click "Add" to add credential)
 
-  
+   
 
   ![](../.gitbook/assets/link_repo_1.png)
 

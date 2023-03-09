@@ -14,9 +14,11 @@ Using the BKCI pipeline template and replication functions, users of the same pr
 
 ● Template creation
 
-Templates can be obtained through the entry "Save as Template" in the upper right corner of the pipeline editing interface. The More - Template Management page on the pipeline main screen allows you to manage templates.
+Templates can be obtained through the entry "Template" in the upper right corner of the pipeline editing interface. The More - Template Management page on the pipeline main screen allows you to manage templates.
 
 ![](../../.gitbook/assets/scene-Template-copy-pipeline-a.png)
+
+
 
 ![](../../.gitbook/assets/scene-Template-copy-pipeline-b.png)
 
@@ -44,7 +46,7 @@ Click "Instantiate" to create multiple pipeline instances at the same time.
 
 ![](../../.gitbook/assets/scene-Template-copy-pipeline-h.png)
 
-If we need to change two of the three pipelinesabove: to add a new task, just modify the template "test-5.5" and save it.
+If we need to change two of the three pipelinesabove: to add a new task, just modify the template "demo" and save it.
 
 ![](../../.gitbook/assets/scene-Template-copy-pipeline-i.png)
 
@@ -58,7 +60,7 @@ Then in the "Instance Management" page, select the pipeline that needs to be cha
 
 ![](../../.gitbook/assets/scene-Template-copy-pipeline-m.png)
 
-It can be found that the total number of the two pipeline plug-ins that need to be changed is changed from "3" to "4".
+It can be found that the total number of the two pipeline plug-ins that need to be changed is changed from "2" to "3".
 
 ![](../../.gitbook/assets/scene-Template-copy-pipeline-n.png)
 

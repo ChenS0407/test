@@ -28,6 +28,6 @@ The pull code policy is set through the environment variable, which is used to p
 
 ![](../../.gitbook/assets/scene-client-multi-Consistent-c.png)
 
-Step 2: Fill in the pipeline execution parameters and click "Execute"; Wait for execution to complete.
+Step 2: Fill in the pipeline execution parameters and click "Run"; Wait for execution to complete.
 
 ![](../../.gitbook/assets/scene-client-multi-Consistent-d.png)
