@@ -1,7 +1,11 @@
 # gitlab code event triggers pipeline
 **Usage scenario:**Pipelining is automatically triggered when code changes occur, such as code commit and code merge
 
+
+
 ![gitlba trigger plugin](../../../.gitbook/assets/image-trigger-gitlab-plugin.png)
+
+
 
 ![gitlab trigger](../../../.gitbook/assets/image-trigger-gitlab.png)
 

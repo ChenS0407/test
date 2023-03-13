@@ -4,4 +4,6 @@ Manually triggering the pipeline is the simplest way to start the pipeline. The 
 
 ![Manual trigger](../../../.gitbook/assets/image-trigger-manual.png)
 
+
+
 ![Manual execution](../../../.gitbook/assets/image-trigger-manual-exec.png)

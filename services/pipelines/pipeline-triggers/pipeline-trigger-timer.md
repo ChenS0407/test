@@ -5,4 +5,6 @@ The timed trigger mode allows users to trigger the pipeline at a specified time.
 
 ![timer plugin](../../../.gitbook/assets/image-trigger-timer-plugin.png)
 
+
+
 ![Timing rule](../../../.gitbook/assets/image-trigger-timer-rule.png)
