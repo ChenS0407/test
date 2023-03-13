@@ -12,7 +12,9 @@ Just go to the pipeline base settings page and set the corresponding build numbe
 ${{DATE:"yyMMdd"}}.${{BUILD_NO_OF_DAY}}
 ```
 
-![&#x81EA;&#x5B9A;&#x4E49;&#x6D41;&#x6C34;&#x7EBF;&#x6784;&#x5EFA;&#x53F7;&#x683C;&#x5F0F;](../../../.gitbook/assets/image%20%2817%29.png)
+
+
+![](../../../.gitbook/assets/image%20%2817%29.png)
 
 ## Rule Description
 
@@ -45,7 +47,13 @@ ${{DATE:"yyMMdd"}}.${{BUILD_NO_OF_DAY}}
 
 ## Effect show
 
+
+
 ![](../../../.gitbook/assets/image%20%2825%29.png)
+
+
+
+
 
 ![](../../../.gitbook/assets/image%20%2847%29.png)
 

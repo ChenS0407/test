@@ -3,7 +3,7 @@
 The first page you switch to Pipelined service is the Pipelined List page, where you will find common entry points for managing pipelined services.
 
 ## Function area introduction
-![&#x6D41;&#x6C34;&#x7EBF;&#x5217;&#x8868;&#x9875;](../../.gitbook/assets/image%20%2827%29.png)
+![](../../.gitbook/assets/image%20%2827%29.png)
 
 1. New assembly line
 2. View the pipeline list

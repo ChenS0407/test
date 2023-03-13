@@ -1,5 +1,6 @@
 # Create/edit pipeline
 One of the core pages of the pipeline, the CI pipeline can be generated through the visual interface.
+
 ![](../../../.gitbook/assets/image%20%2811%29.png)
 
 1. Assembly line crumbs: There are two click events
