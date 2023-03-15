@@ -1,9 +1,10 @@
 # Use variables in the Shell/Batchscript plugin
 ## Use variables in Shell plug-ins
 ```shell
-# References the global variable WORKSPACEcd ${WORKSPACE}
+# References the global variable WORKSPACE
+cd ${WORKSPACE}
 
-Set custom variables: setEnv 'variable name' 'variable value'
+# Set custom variables: setEnv 'variable name' 'variable value'
 setEnv 'version' '3.2.16'
 ```
 
