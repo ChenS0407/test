@@ -6,6 +6,8 @@ The R&D store provides the public resources needed to run the pipeline: plugins,
 
 ![](../.gitbook/assets/image%20%286%29.png)
 
+
+
 1. search for the current type of R&D store resources by keyword (what resource type it currently belongs to can be viewed in 4)
 2. the workbench portal, you can manage your own contributed resources
 3. current resource list

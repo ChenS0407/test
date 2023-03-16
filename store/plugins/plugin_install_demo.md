@@ -96,7 +96,7 @@ According to the plugin download address, download the installation package firs
 
 Path.
 
-BlueShield ----->R&D Store ---->Workbench
+BKCI ----->Store ---->Workspace
 
 ![](../../.gitbook/assets/toworktable.png)
 
@@ -177,6 +177,8 @@ cat /data/install/install.config| grep artifactory
 
 ![](../../.gitbook/assets/image-20220401162613444.png)
 
+
+
 ![](../../.gitbook/assets/image-20220401163005167.png)
 
 ---
@@ -198,28 +200,6 @@ When you click Submit, you will be taken to the plugin testing phase. Here the p
 The plugin **pushJobFile** was successfully shelved to the R&D store and is ready for plugin installation.
 
 
-
----
-
-### VI. Installation of plug-ins
-
-After the plug-in is successfully shelved, you can install the plug-in. Only projects that have installed the corresponding plug-ins can use the corresponding plug-ins.
-
-"R&D Store" - "Click on the corresponding plug-ins" - "Installation" - "Select the corresponding project" - "installation"
-
-
-
-**Enter the R&D store and select the corresponding plug-in**
-
-![](../../.gitbook/assets/image-20220606160525103.png)
-
-**Select the plugin to install**
-
-![](../../.gitbook/assets/image-20220606160351809.png)
-
-**Select the project the plugin is to be installed to**
-
-![](../../.gitbook/assets/image-20220606160702553.png)
 
 ---
 

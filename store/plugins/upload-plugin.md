@@ -27,6 +27,7 @@ In the workbench list, click the following entry to initiate the publication pro
 
 When upgrading plug-ins, there are three upgrade modes:
      ![](../../.gitbook/assets/image%20%289%29.png)
+
 1. Incompatible upgrade:
    * Used when the plug-in input and output are different or the same input and output but the functional logic has changed significantly and is incompatible with the older version
    * After this version is released, the pipeline that has used this plug-in will not automatically upgrade the version. You need to manually change the version number
