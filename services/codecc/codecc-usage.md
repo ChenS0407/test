@@ -39,8 +39,6 @@ For details about how to create gitlab accesstoken, see [Creating an accesstoken
 
 Then go back to the Associated code library page, select the accesstoken you just created, and OK
 
-![img](../../.gitbook/assets/image-20220301101202-ZPLrE.png)
-
 **For details about other types of [credentials, see](../ticket.md)**[ Certificate Management](../ticket.md)
 
 ### Create pipeline

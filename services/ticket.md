@@ -6,9 +6,11 @@ During pipelination, you may need a variety of credential types to pull up the c
 
 ![](../.gitbook/assets/image%20%288%29.png)
 
+
+
 The following credential types are currently supported:
 
-| 类型 | 描述 |
+| Type | Describe                                                     |
 | :--- | :--- |
 | password | Once defined, it is referenced as a pipeline variable in various plug-ins |
 | User name + password | Generally, it is used to associate the SVN code base |

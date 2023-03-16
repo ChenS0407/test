@@ -6,9 +6,9 @@ This tutorial will guide you through hosting your build resources to bk-ci in th
 
 Import method: Service - Environment Management - Node page, click on the upper right corner to import the third-party builder:
 
+![](../../../.gitbook/assets/import_agent.png)
 
 
-![](../../../.gitbook/assets/image (37).png)
 
 According to the popover:
 

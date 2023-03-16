@@ -20,10 +20,15 @@ new-item C:\data\landun -itemtype directory
 
 Decompress the downloaded Agent package to the folder created in the previous step
 
+
+
 ![](../../../../.gitbook/assets/image%20%2854%29.png)
 
 Run install.bat as an administrator
+
 ![](../../../../.gitbook/assets/image%20%2855%29.png)
+
+
 
 The above operation installs the agent as a system service, and the startup user of the service is the built-in windows user `system`. In order to read the user environment variables and user directory information during the pipeline process, `need to change the system service startup user to the login user`.
 
@@ -34,9 +39,11 @@ Right-click-&gt; Properties and select `this account` under the login tab
 If it's a builder that's in the domain, the account name should be `domain\username`, e.g. `tencent\xxx`; if it's a builder that's not in the domain, the account name should be `.\username`, e.g. `.\admin`, `.\administrator`, `.\bkci`
 
 After entering the password, click the `Confirm` button
+
 ![](../../../../.gitbook/assets/image%20%2853%29.png)
 
 Right click -&gt; Restart to restart the service
+
 ![](../../../../.gitbook/assets/image%20%2852%29.png)
 
 ## Check the status

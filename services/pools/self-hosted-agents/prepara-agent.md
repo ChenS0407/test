@@ -20,12 +20,12 @@ The Developer Store supports python plugins. If you want to run python plugins o
   timeout = 600
   
   [install]
-  trusted-host = <pip source host>  ```
+  trusted-host = <pip source host> 
   ```
 
   * Configuration Procedure (Using Linux as an example)
 
-    > The user for configuring pip must be the same as the user for enabling bk-ci Agent. Otherwise, the configuration does not take effect. Perform ps - ef \| grep enterprise command to confirm start bk - ci Agent user
+    > The user who configures pip and the user who starts bk-ci Agent must be the same, otherwise the configuration will not take effect. Execute the ps -ef |grep devops command to confirm the user who started the bk-ci Agent
 
     * Log in to the machine as the user who installed bk-ci Agent
     * vi ~/.pip/pip.conf to add the above configuration, note that the newline cannot be \r\n
